@@ -1,0 +1,4 @@
+[INFO] [1776408009.305366]: Loading model XML from file /workspace/tools/test_models/wall_obstacle.sdf
+[INFO] [1776408009.306588]: Waiting for service /gazebo/spawn_sdf_model
+[INFO] [1776408009.308976]: Calling service /gazebo/spawn_sdf_model
+[INFO] [1776408009.428864]: Spawn status: SpawnModel: Successfully spawned entity

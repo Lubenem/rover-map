@@ -1,0 +1,9 @@
+catkin_ws/build/
+catkin_ws/devel/
+catkin_ws/log/
+catkin_ws/src/
+
+# vendored deps (cloned by bootstrap; not tracked)
+/lib/*
+!/lib/patches/
+!/lib/patches/**

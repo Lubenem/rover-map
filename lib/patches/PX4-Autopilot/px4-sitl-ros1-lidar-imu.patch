@@ -1,0 +1,42 @@
+diff --git a/Tools/setup_gazebo.bash b/Tools/setup_gazebo.bash
+index f11cc26218..df41065f41 100755
+--- a/Tools/setup_gazebo.bash
++++ b/Tools/setup_gazebo.bash
+@@ -15,6 +15,19 @@ fi
+ SRC_DIR=$1
+ BUILD_DIR=$2
+ 
++# Ensure baseline Gazebo paths are present (otherwise ROS-only path overrides drop RayPlugin)
++DEFAULT_GZ_PLUGIN=/usr/lib/x86_64-linux-gnu/gazebo-11/plugins
++DEFAULT_GZ_MODEL=/usr/share/gazebo-11/models
++if [[ ":$GAZEBO_PLUGIN_PATH:" != *":$DEFAULT_GZ_PLUGIN:"* ]]; then
++  export GAZEBO_PLUGIN_PATH=$GAZEBO_PLUGIN_PATH:$DEFAULT_GZ_PLUGIN
++fi
++if [[ ":$LD_LIBRARY_PATH:" != *":$DEFAULT_GZ_PLUGIN:"* ]]; then
++  export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$DEFAULT_GZ_PLUGIN
++fi
++if [[ ":$GAZEBO_MODEL_PATH:" != *":$DEFAULT_GZ_MODEL:"* ]]; then
++  export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:$DEFAULT_GZ_MODEL
++fi
++
+ # setup Gazebo env and update package path
+ export GAZEBO_PLUGIN_PATH=$GAZEBO_PLUGIN_PATH:${BUILD_DIR}/build_gazebo
+ export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:${SRC_DIR}/Tools/sitl_gazebo/models
+diff --git a/Tools/sitl_run.sh b/Tools/sitl_run.sh
+index d2d9299432..18c83b9634 100755
+--- a/Tools/sitl_run.sh
++++ b/Tools/sitl_run.sh
+@@ -56,9 +56,12 @@ else
+     follow_mode=""
+ fi
+ 
+-# To use gazebo_ros ROS2 plugins
++# To use gazebo_ros plugins
+ if [[ -n "$ROS_VERSION" ]] && [ "$ROS_VERSION" == "2" ]; then
+ 	ros_args="-s libgazebo_ros_init.so -s libgazebo_ros_factory.so"
++elif [[ -n "$ROS_VERSION" ]] && [ "$ROS_VERSION" == "1" ]; then
++	# ROS1 bridge plugin required so gazebo_ros_* model plugins publish ROS topics.
++	ros_args="-s libgazebo_ros_api_plugin.so"
+ else
+ 	ros_args=""
+ fi

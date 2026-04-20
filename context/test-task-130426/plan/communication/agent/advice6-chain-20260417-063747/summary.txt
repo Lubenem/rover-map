@@ -1,0 +1,8 @@
+rover_model_used=/workspace/lib/PX4-Autopilot/Tools/sitl_gazebo/models/rover/rover_no_velodyne_rplidar_imu.sdf
+/laser/scan=pass rate=9.985
+/imu=pass rate=103.121
+/points_raw=pass rate=9.998 type=sensor_msgs/PointCloud2 width=268
+/livox/lidar=pass rate=9.977 type=livox_ros_driver/CustomMsg point_num=268
+mapper_input_topics_used=lidar:/livox/lidar imu:/livox/imu
+/cloud_registered=fail rate= width=0
+final_verdict_full_real_step3=fail

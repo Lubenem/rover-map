@@ -1,0 +1,2156 @@
+header: 
+  seq: 5182
+  stamp: 
+    secs: 521
+    nsecs:  52000000
+  frame_id: "base_link"
+timebase: 521052000000
+point_num: 268
+lidar_id: 0
+rsvd: [0, 0, 0]
+points: 
+  - 
+    offset_time: 0
+    x: -0.23570100963115692
+    y: -0.00037536563468165696
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 1000
+    x: -0.2434791773557663
+    y: -0.004647506400942802
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 2000
+    x: -0.2286280244588852
+    y: -0.008366629481315613
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 3000
+    x: -0.24252180755138397
+    y: -0.013126350939273834
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 4000
+    x: -0.2504523992538452
+    y: -0.017954209819436073
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 5000
+    x: -0.22696468234062195
+    y: -0.020266566425561905
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 6000
+    x: -0.23359531164169312
+    y: -0.02498438023030758
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 7000
+    x: -0.2347644865512848
+    y: -0.029271364212036133
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 8000
+    x: -0.2534659206867218
+    y: -0.03611625358462334
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 9000
+    x: -0.2386348396539688
+    y: -0.03827326372265816
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 10000
+    x: -0.24518965184688568
+    y: -0.04373681917786598
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 11000
+    x: -0.23292191326618195
+    y: -0.045766256749629974
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 12000
+    x: -0.23096102476119995
+    y: -0.04959206283092499
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 13000
+    x: -0.22771503031253815
+    y: -0.0530783012509346
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 14000
+    x: -0.24619901180267334
+    y: -0.0619465671479702
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 15000
+    x: -0.24593044817447662
+    y: -0.06647411733865738
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 16000
+    x: -0.23692867159843445
+    y: -0.06850996613502502
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 17000
+    x: -0.24042817950248718
+    y: -0.07410299777984619
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 18000
+    x: -0.26099637150764465
+    y: -0.0854693204164505
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 19000
+    x: -0.25049906969070435
+    y: -0.08691209554672241
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 20000
+    x: -0.24409127235412598
+    y: -0.0895024761557579
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 21000
+    x: -0.24691148102283478
+    y: -0.0954686775803566
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 22000
+    x: -0.2534075677394867
+    y: -0.10311120003461838
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 23000
+    x: -0.23980101943016052
+    y: -0.10249964892864227
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 24000
+    x: -0.24960921704769135
+    y: -0.11189564317464828
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 25000
+    x: -0.25362062454223633
+    y: -0.11906472593545914
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 26000
+    x: -0.21930189430713654
+    y: -0.10767443478107452
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 27000
+    x: -0.2449381798505783
+    y: -0.12562577426433563
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 28000
+    x: -0.2410726398229599
+    y: -0.1290183812379837
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 29000
+    x: -0.2365383803844452
+    y: -0.1319654881954193
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 30000
+    x: -0.2566021978855133
+    y: -0.14910368621349335
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 31000
+    x: -0.2429821789264679
+    y: -0.1469341218471527
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 32000
+    x: -0.23772794008255005
+    y: -0.1494974046945572
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 33000
+    x: -0.2372167706489563
+    y: -0.15503165125846863
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 34000
+    x: -0.24982522428035736
+    y: -0.16958141326904297
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 35000
+    x: -0.2546161711215973
+    y: -0.1794186532497406
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 36000
+    x: -0.22586537897586823
+    y: -0.16514641046524048
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 37000
+    x: -0.220871701836586
+    y: -0.16750192642211914
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 38000
+    x: -0.23852254450321198
+    y: -0.18754898011684418
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 39000
+    x: -0.2464432269334793
+    y: -0.20085136592388153
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 40000
+    x: -0.24969026446342468
+    y: -0.21087267994880676
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 41000
+    x: -0.2382493019104004
+    y: -0.20845846831798553
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 42000
+    x: -0.23224222660064697
+    y: -0.21048754453659058
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 43000
+    x: -0.23458869755268097
+    y: -0.22020995616912842
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 44000
+    x: -0.2366071492433548
+    y: -0.2300216257572174
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 45000
+    x: -0.2412773221731186
+    y: -0.2429143786430359
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 46000
+    x: -0.23842753469944
+    y: -0.24859514832496643
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 47000
+    x: -0.2501641511917114
+    y: -0.27013635635375977
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 48000
+    x: -0.22692233324050903
+    y: -0.25380370020866394
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 49000
+    x: -0.23672226071357727
+    y: -0.27427271008491516
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 50000
+    x: -0.23977503180503845
+    y: -0.28783902525901794
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 51000
+    x: -0.234358549118042
+    y: -0.2915601134300232
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 52000
+    x: -0.23372064530849457
+    y: -0.30141571164131165
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 53000
+    x: -0.2290007323026657
+    y: -0.30624455213546753
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 54000
+    x: -0.23236098885536194
+    y: -0.32234492897987366
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 55000
+    x: -0.2295304536819458
+    y: -0.33045390248298645
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 56000
+    x: -0.24023577570915222
+    y: -0.35911425948143005
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 57000
+    x: -0.2416049987077713
+    y: -0.3752001225948334
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 58000
+    x: -0.24031125009059906
+    y: -0.3879348039627075
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 59000
+    x: -0.23480597138404846
+    y: -0.3942910432815552
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 60000
+    x: -0.24010314047336578
+    y: -0.41971704363822937
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 61000
+    x: -0.2365272343158722
+    y: -0.43077823519706726
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 62000
+    x: -0.2437792420387268
+    y: -0.4630034565925598
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 63000
+    x: -0.24226514995098114
+    y: -0.48032617568969727
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 64000
+    x: -0.2398984283208847
+    y: -0.4970722496509552
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 65000
+    x: -0.2422502189874649
+    y: -0.5252223610877991
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 66000
+    x: -0.24190552532672882
+    y: -0.5495519042015076
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 67000
+    x: -0.24334634840488434
+    y: -0.5801395177841187
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 68000
+    x: -0.24328269064426422
+    y: -0.6096720099449158
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 69000
+    x: -0.24269399046897888
+    y: -0.6405247449874878
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 70000
+    x: -0.2365041822195053
+    y: -0.6587420105934143
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 71000
+    x: 0.3278992474079132
+    y: -0.6337273120880127
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 72000
+    x: 0.3285461664199829
+    y: -0.6086500883102417
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 73000
+    x: 0.3323475122451782
+    y: -0.5907321572303772
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 74000
+    x: 0.3285701870918274
+    y: -0.5608301758766174
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 75000
+    x: 0.32654720544815063
+    y: -0.5356684327125549
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 76000
+    x: 0.32102981209754944
+    y: -0.5064664483070374
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 77000
+    x: 0.3281983733177185
+    y: -0.4982813000679016
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 78000
+    x: 0.3320664167404175
+    y: -0.4854503273963928
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 79000
+    x: 0.3343372046947479
+    y: -0.4708777368068695
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 80000
+    x: 0.3282865881919861
+    y: -0.44563257694244385
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 81000
+    x: 0.33348187804222107
+    y: -0.4364849328994751
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 82000
+    x: 0.32586386799812317
+    y: -0.4113927483558655
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 83000
+    x: 0.33045950531959534
+    y: -0.40252289175987244
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 84000
+    x: 0.32759374380111694
+    y: -0.38509464263916016
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 85000
+    x: 0.3318996727466583
+    y: -0.37660476565361023
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 86000
+    x: 0.32935214042663574
+    y: -0.3607899844646454
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 87000
+    x: 0.3319540023803711
+    y: -0.35110390186309814
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 88000
+    x: 0.3355138599872589
+    y: -0.34265878796577454
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 89000
+    x: 0.34396806359291077
+    y: -0.3392145037651062
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 90000
+    x: 0.33515664935112
+    y: -0.3191549479961395
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 91000
+    x: 0.3308825194835663
+    y: -0.3042278289794922
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 92000
+    x: 0.33776676654815674
+    y: -0.299825519323349
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 93000
+    x: 0.34083855152130127
+    y: -0.29205384850502014
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 94000
+    x: 0.320158451795578
+    y: -0.26476362347602844
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 95000
+    x: 0.3434617817401886
+    y: -0.27406105399131775
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 96000
+    x: 0.33565130829811096
+    y: -0.25835010409355164
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 97000
+    x: 0.3456995189189911
+    y: -0.25658121705055237
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 98000
+    x: 0.3227803707122803
+    y: -0.23092490434646606
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 99000
+    x: 0.3385392725467682
+    y: -0.2333557903766632
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 100000
+    x: 0.33797508478164673
+    y: -0.22434860467910767
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 101000
+    x: 0.3381677269935608
+    y: -0.21605126559734344
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 102000
+    x: 0.3385409116744995
+    y: -0.20804165303707123
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 103000
+    x: 0.3086091876029968
+    y: -0.1822890341281891
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 104000
+    x: 0.32493856549263
+    y: -0.18434473872184753
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 105000
+    x: 0.3305901288986206
+    y: -0.1799810230731964
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 106000
+    x: 0.3477168083190918
+    y: -0.18149329721927643
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 107000
+    x: 0.338931679725647
+    y: -0.16943112015724182
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 108000
+    x: 0.3289295434951782
+    y: -0.15730081498622894
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 109000
+    x: 0.3453582525253296
+    y: -0.15779520571231842
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 110000
+    x: 0.33668163418769836
+    y: -0.1467674821615219
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 111000
+    x: 0.32353371381759644
+    y: -0.1343512088060379
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 112000
+    x: 0.3489905893802643
+    y: -0.13781572878360748
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 113000
+    x: 0.3342873454093933
+    y: -0.1252955198287964
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 114000
+    x: 0.3328855633735657
+    y: -0.11817145347595215
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 115000
+    x: 0.328878790140152
+    y: -0.11031033098697662
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 116000
+    x: 0.3264106512069702
+    y: -0.1031666025519371
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 117000
+    x: 0.3222363293170929
+    y: -0.09568071365356445
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 118000
+    x: 0.33602455258369446
+    y: -0.09341088682413101
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 119000
+    x: 0.3248589336872101
+    y: -0.08421406149864197
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 120000
+    x: 0.3357127606868744
+    y: -0.08078810572624207
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 121000
+    x: 0.3328256607055664
+    y: -0.07395923137664795
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 122000
+    x: 0.28722018003463745
+    y: -0.05857238918542862
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 123000
+    x: 0.3201872706413269
+    y: -0.05948149040341377
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 124000
+    x: 0.32849377393722534
+    y: -0.055098582059144974
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 125000
+    x: 0.332996666431427
+    y: -0.049881767481565475
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 126000
+    x: 0.3368935286998749
+    y: -0.04445510730147362
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 127000
+    x: 0.3275962471961975
+    y: -0.0374106764793396
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 128000
+    x: 0.33676090836524963
+    y: -0.032500751316547394
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 129000
+    x: 0.3380628228187561
+    y: -0.026667026802897453
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 130000
+    x: 0.33098724484443665
+    y: -0.020290330052375793
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 131000
+    x: 0.3068176209926605
+    y: -0.013426553457975388
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 132000
+    x: 0.34880125522613525
+    y: -0.009154561907052994
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 133000
+    x: 0.32633543014526367
+    y: -0.002854438964277506
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 134000
+    x: 0.3213220536708832
+    y: 0.0028104542288929224
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 135000
+    x: 0.3436991274356842
+    y: 0.00902051106095314
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 136000
+    x: 0.31853747367858887
+    y: 0.013939290307462215
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 137000
+    x: 0.3271610736846924
+    y: 0.020055638626217842
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 138000
+    x: 0.33578142523765564
+    y: 0.026486927643418312
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 139000
+    x: 0.3140754699707031
+    y: 0.030311252921819687
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 140000
+    x: 0.3256745934486389
+    y: 0.03719109296798706
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 141000
+    x: 0.3432008624076843
+    y: 0.04528725519776344
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 142000
+    x: 0.3119699954986572
+    y: 0.04673190787434578
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 143000
+    x: 0.34844478964805603
+    y: 0.05844483897089958
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 144000
+    x: 0.32406511902809143
+    y: 0.0602017380297184
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 145000
+    x: 0.3306299149990082
+    y: 0.0674247294664383
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 146000
+    x: 0.3034612834453583
+    y: 0.06743386387825012
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 147000
+    x: 0.32951614260673523
+    y: 0.0792967677116394
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 148000
+    x: 0.3179434835910797
+    y: 0.082421213388443
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 149000
+    x: 0.33685868978500366
+    y: 0.09364261478185654
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 150000
+    x: 0.3356134295463562
+    y: 0.09965258836746216
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 151000
+    x: 0.330214262008667
+    y: 0.10436863452196121
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 152000
+    x: 0.32919421792030334
+    y: 0.11041596531867981
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 153000
+    x: 0.33327463269233704
+    y: 0.11830941587686539
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 154000
+    x: 0.3376196622848511
+    y: 0.12654435634613037
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 155000
+    x: 0.333200067281723
+    y: 0.1315799206495285
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 156000
+    x: 0.331997811794281
+    y: 0.13786587119102478
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 157000
+    x: 0.32959893345832825
+    y: 0.14367979764938354
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 158000
+    x: 0.3310816287994385
+    y: 0.1512720137834549
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 159000
+    x: 0.3550248146057129
+    y: 0.1697799265384674
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 160000
+    x: 0.3280876576900482
+    y: 0.16401004791259766
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 161000
+    x: 0.3210844397544861
+    y: 0.16759216785430908
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 162000
+    x: 0.3357994258403778
+    y: 0.18281690776348114
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 163000
+    x: 0.33643805980682373
+    y: 0.19086845219135284
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 164000
+    x: 0.3323584198951721
+    y: 0.19631703197956085
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 165000
+    x: 0.32271504402160645
+    y: 0.19831609725952148
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 166000
+    x: 0.3298928141593933
+    y: 0.2107643336057663
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 167000
+    x: 0.3361082971096039
+    y: 0.22310923039913177
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 168000
+    x: 0.3311964273452759
+    y: 0.22829414904117584
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 169000
+    x: 0.33547481894493103
+    y: 0.24000661075115204
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 170000
+    x: 0.33062833547592163
+    y: 0.2453950196504593
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 171000
+    x: 0.3442084491252899
+    y: 0.26493629813194275
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 172000
+    x: 0.33166372776031494
+    y: 0.2646467089653015
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 173000
+    x: 0.32796066999435425
+    y: 0.27121564745903015
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 174000
+    x: 0.3326182961463928
+    y: 0.2850099503993988
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 175000
+    x: 0.33938655257225037
+    y: 0.30126309394836426
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 176000
+    x: 0.33065611124038696
+    y: 0.3040194511413574
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 177000
+    x: 0.34011319279670715
+    y: 0.3238745629787445
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 178000
+    x: 0.321884423494339
+    y: 0.31743577122688293
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 179000
+    x: 0.32186418771743774
+    y: 0.3287181556224823
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 180000
+    x: 0.3179265260696411
+    y: 0.3362669348716736
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 181000
+    x: 0.33068975806236267
+    y: 0.3622549772262573
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 182000
+    x: 0.3332521617412567
+    y: 0.37813907861709595
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 183000
+    x: 0.3366653323173523
+    y: 0.39575818181037903
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 184000
+    x: 0.3316197693347931
+    y: 0.40393581986427307
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 185000
+    x: 0.33812862634658813
+    y: 0.4268762469291687
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 186000
+    x: 0.3294622004032135
+    y: 0.4312233328819275
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 187000
+    x: 0.33153635263442993
+    y: 0.45004355907440186
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 188000
+    x: 0.3328145146369934
+    y: 0.4687327742576599
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 189000
+    x: 0.3373672068119049
+    y: 0.49319911003112793
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 190000
+    x: 0.33781692385673523
+    y: 0.5128840208053589
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 191000
+    x: 0.3264489769935608
+    y: 0.5150154829025269
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 192000
+    x: 0.33753442764282227
+    y: 0.5536913275718689
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 193000
+    x: 0.33975642919540405
+    y: 0.5799232125282288
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 194000
+    x: 0.3315204977989197
+    y: 0.5892615914344788
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 195000
+    x: 0.3305807411670685
+    y: 0.6124185919761658
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 196000
+    x: 0.3229045271873474
+    y: 0.6240734457969666
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 197000
+    x: -0.2472732812166214
+    y: 0.6887384057044983
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 198000
+    x: -0.2458641231060028
+    y: 0.6488922834396362
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 199000
+    x: -0.2402755618095398
+    y: 0.6021367907524109
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 200000
+    x: -0.24364402890205383
+    y: 0.5808498859405518
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 201000
+    x: -0.24026377499103546
+    y: 0.5458228588104248
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 202000
+    x: -0.23530907928943634
+    y: 0.5101738572120667
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 203000
+    x: -0.2411348670721054
+    y: 0.499634712934494
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 204000
+    x: -0.23921141028404236
+    y: 0.4742721915245056
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 205000
+    x: -0.2382030189037323
+    y: 0.4524131417274475
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 206000
+    x: -0.2420457899570465
+    y: 0.44082942605018616
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 207000
+    x: -0.24253159761428833
+    y: 0.4239625632762909
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 208000
+    x: -0.24217846989631653
+    y: 0.4066714942455292
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 209000
+    x: -0.23704726994037628
+    y: 0.38266611099243164
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 210000
+    x: -0.23832854628562927
+    y: 0.37011227011680603
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 211000
+    x: -0.24392883479595184
+    y: 0.3646351397037506
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 212000
+    x: -0.23857490718364716
+    y: 0.34347549080848694
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 213000
+    x: -0.24016675353050232
+    y: 0.33317384123802185
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 214000
+    x: -0.2485346496105194
+    y: 0.3323676884174347
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 215000
+    x: -0.24062979221343994
+    y: 0.31032630801200867
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 216000
+    x: -0.2308507114648819
+    y: 0.2871963679790497
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 217000
+    x: -0.24180105328559875
+    y: 0.29027143120765686
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 218000
+    x: -0.2404806911945343
+    y: 0.27862754464149475
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 219000
+    x: -0.22636395692825317
+    y: 0.2531794011592865
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 220000
+    x: -0.23110052943229675
+    y: 0.2495509684085846
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 221000
+    x: -0.23327228426933289
+    y: 0.2432202398777008
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 222000
+    x: -0.24595630168914795
+    y: 0.24762530624866486
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 223000
+    x: -0.2448446899652481
+    y: 0.2380300760269165
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 224000
+    x: -0.23869143426418304
+    y: 0.22406141459941864
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 225000
+    x: -0.24148105084896088
+    y: 0.21886113286018372
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 226000
+    x: -0.24346144497394562
+    y: 0.21301905810832977
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 227000
+    x: -0.2406274378299713
+    y: 0.2032189518213272
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 228000
+    x: -0.2349754273891449
+    y: 0.19150526821613312
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 229000
+    x: -0.22866898775100708
+    y: 0.1798013299703598
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 230000
+    x: -0.23566047847270966
+    y: 0.17871741950511932
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 231000
+    x: -0.23684930801391602
+    y: 0.17317771911621094
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 232000
+    x: -0.2336283177137375
+    y: 0.16462942957878113
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 233000
+    x: -0.2243242710828781
+    y: 0.15227149426937103
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 234000
+    x: -0.24173396825790405
+    y: 0.15798398852348328
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 235000
+    x: -0.2409941554069519
+    y: 0.15155154466629028
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 236000
+    x: -0.23982250690460205
+    y: 0.14502356946468353
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 237000
+    x: -0.2367270141839981
+    y: 0.13755495846271515
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 238000
+    x: -0.24974192678928375
+    y: 0.13933192193508148
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 239000
+    x: -0.22573217749595642
+    y: 0.12080851197242737
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 240000
+    x: -0.2504284083843231
+    y: 0.12844176590442657
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 241000
+    x: -0.24539385735988617
+    y: 0.12048538774251938
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 242000
+    x: -0.2519282102584839
+    y: 0.11827033013105392
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 243000
+    x: -0.23530007898807526
+    y: 0.10548121482133865
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 244000
+    x: -0.24564863741397858
+    y: 0.10499925166368484
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 245000
+    x: -0.2278796136379242
+    y: 0.0927240252494812
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 246000
+    x: -0.25348520278930664
+    y: 0.09801054000854492
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 247000
+    x: -0.23264090716838837
+    y: 0.08530400693416595
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 248000
+    x: -0.23495183885097504
+    y: 0.08151800185441971
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 249000
+    x: -0.24279606342315674
+    y: 0.07950931042432785
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 250000
+    x: -0.24317669868469238
+    y: 0.07495023310184479
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 251000
+    x: -0.23382674157619476
+    y: 0.06761311739683151
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 252000
+    x: -0.2496599704027176
+    y: 0.06748230755329132
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 253000
+    x: -0.2455829530954361
+    y: 0.06179166957736015
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 254000
+    x: -0.23354493081569672
+    y: 0.0544372983276844
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 255000
+    x: -0.24208295345306396
+    y: 0.05198027566075325
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 256000
+    x: -0.23723508417606354
+    y: 0.046613845974206924
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 257000
+    x: -0.24339094758033752
+    y: 0.04341607168316841
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 258000
+    x: -0.24243587255477905
+    y: 0.038882993161678314
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 259000
+    x: -0.23076298832893372
+    y: 0.032881420105695724
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 260000
+    x: -0.2455255389213562
+    y: 0.03061319887638092
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 261000
+    x: -0.22302667796611786
+    y: 0.023854095488786697
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 262000
+    x: -0.2539116144180298
+    y: 0.0226728692650795
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 263000
+    x: -0.24079519510269165
+    y: 0.017262011766433716
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 264000
+    x: -0.23901113867759705
+    y: 0.012936437502503395
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 265000
+    x: -0.22120749950408936
+    y: 0.008095167577266693
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 266000
+    x: -0.2538423538208008
+    y: 0.0048454231582582
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+  - 
+    offset_time: 267000
+    x: -0.2380155622959137
+    y: 0.0003791500930674374
+    z: 0.0
+    reflectivity: 0
+    tag: 0
+    line: 0
+---

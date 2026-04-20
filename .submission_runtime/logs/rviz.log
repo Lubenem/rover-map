@@ -1,0 +1,14 @@
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-dev'
+amdgpu: unknown (family_id, chip_external_rev): (148, 13)
+libGL error: failed to create dri screen
+libGL error: failed to load driver: radeonsi
+amdgpu: unknown (family_id, chip_external_rev): (148, 13)
+libGL error: failed to create dri screen
+libGL error: failed to load driver: radeonsi
+[0m[INFO] [1776663399.090207970]: rviz version 1.14.26[0m
+[0m[INFO] [1776663399.090239207]: compiled against Qt version 5.12.8[0m
+[0m[INFO] [1776663399.090243204]: compiled against OGRE version 1.9.0 (Ghadamon)[0m
+[0m[INFO] [1776663399.093546236]: Forcing OpenGl version 0.[0m
+[0m[INFO] [1776663399.260786079]: Stereo is NOT SUPPORTED[0m
+[0m[INFO] [1776663399.260840359]: OpenGL device: llvmpipe (LLVM 12.0.0, 256 bits)[0m
+[0m[INFO] [1776663399.260854274]: OpenGl version: 3.1 (GLSL 1.4).[0m

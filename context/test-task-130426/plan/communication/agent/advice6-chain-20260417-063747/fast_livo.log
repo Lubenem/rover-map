@@ -1,0 +1,928 @@
+[0m[INFO] [1776407929.928915669]: Found parameter: laserMapping/cam_model, value: Pinhole[0m
+[0m[INFO] [1776407929.929340776]: Found parameter: laserMapping/cam_width, value: 1280[0m
+[0m[INFO] [1776407929.929426577]: Found parameter: laserMapping/cam_height, value: 1024[0m
+[0m[INFO] [1776407929.929523749]: Found parameter: laserMapping/scale, value: 0.5[0m
+[0m[INFO] [1776407929.929606966]: Found parameter: laserMapping/cam_fx, value: 1293.57[0m
+[0m[INFO] [1776407929.929696774]: Found parameter: laserMapping/cam_fy, value: 1293.32[0m
+[0m[INFO] [1776407929.929776914]: Found parameter: laserMapping/cam_cx, value: 626.914[0m
+[0m[INFO] [1776407929.929852857]: Found parameter: laserMapping/cam_cy, value: 522.799[0m
+[0m[INFO] [1776407929.929928699]: Found parameter: laserMapping/cam_d0, value: -0.07616[0m
+[0m[INFO] [1776407929.930003560]: Found parameter: laserMapping/cam_d1, value: 0.123001[0m
+[0m[INFO] [1776407929.930079202]: Found parameter: laserMapping/cam_d2, value: -0.00113[0m
+[0m[INFO] [1776407929.930168178]: Found parameter: laserMapping/cam_d3, value: 0.000251[0m
+scale: 0.5
+[31m[ERROR] [1776407930.233876312]: Received an empty point cloud[0m
+[31m[ERROR] [1776407930.333191971]: Received an empty point cloud[0m
+[31m[ERROR] [1776407930.433770088]: Received an empty point cloud[0m
+[31m[ERROR] [1776407930.534595960]: Received an empty point cloud[0m
+[31m[ERROR] [1776407930.635210135]: Received an empty point cloud[0m
+[31m[ERROR] [1776407930.735217912]: Received an empty point cloud[0m
+[31m[ERROR] [1776407930.834649888]: Received an empty point cloud[0m
+[31m[ERROR] [1776407930.935191878]: Received an empty point cloud[0m
+[31m[ERROR] [1776407931.035057979]: Received an empty point cloud[0m
+[31m[ERROR] [1776407931.135242768]: Received an empty point cloud[0m
+[31m[ERROR] [1776407931.235015103]: Received an empty point cloud[0m
+[31m[ERROR] [1776407931.334208903]: Received an empty point cloud[0m
+[31m[ERROR] [1776407931.435007103]: Received an empty point cloud[0m
+[31m[ERROR] [1776407931.534609760]: Received an empty point cloud[0m
+[31m[ERROR] [1776407931.633997374]: Received an empty point cloud[0m
+[31m[ERROR] [1776407931.734435799]: Received an empty point cloud[0m
+[31m[ERROR] [1776407931.835606738]: Received an empty point cloud[0m
+[31m[ERROR] [1776407931.935208864]: Received an empty point cloud[0m
+[31m[ERROR] [1776407932.036395573]: Received an empty point cloud[0m
+[31m[ERROR] [1776407932.135607587]: Received an empty point cloud[0m
+[31m[ERROR] [1776407932.235705323]: Received an empty point cloud[0m
+[31m[ERROR] [1776407932.335407066]: Received an empty point cloud[0m
+[31m[ERROR] [1776407932.435411075]: Received an empty point cloud[0m
+[31m[ERROR] [1776407932.535210532]: Received an empty point cloud[0m
+[31m[ERROR] [1776407932.635196488]: Received an empty point cloud[0m
+intrinsic: 646.784720, 646.657750, 313.456795, 261.399612
+width: 640, height: 512, scale: 0.500000
+[0m[INFO] [1776407930.233787355]: Get LiDAR, its header time: 59.176000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407930.333163007]: Get LiDAR, its header time: 59.276000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407930.433725234]: Get LiDAR, its header time: 59.376000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407930.534566845]: Get LiDAR, its header time: 59.476000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407930.635173225]: Get LiDAR, its header time: 59.576000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407930.735180632]: Get LiDAR, its header time: 59.676000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407930.834608451]: Get LiDAR, its header time: 59.776000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407930.935162703]: Get LiDAR, its header time: 59.876000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407931.034998738]: Get LiDAR, its header time: 59.976000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407931.135191352]: Get LiDAR, its header time: 60.076000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407931.234978645]: Get LiDAR, its header time: 60.176000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407931.334172245]: Get LiDAR, its header time: 60.276000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407931.434970785]: Get LiDAR, its header time: 60.376000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407931.534572220]: Get LiDAR, its header time: 60.476000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407931.633967578]: Get LiDAR, its header time: 60.576000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407931.734388740]: Get LiDAR, its header time: 60.676000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407931.835570851]: Get LiDAR, its header time: 60.776000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407931.935172646]: Get LiDAR, its header time: 60.876000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407932.036364875]: Get LiDAR, its header time: 60.976000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407932.135571479]: Get LiDAR, its header time: 61.076000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407932.235633989]: Get LiDAR, its header time: 61.176000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407932.335370607]: Get LiDAR, its header time: 61.276000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407932.435374136]: Get LiDAR, its header time: 61.376000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407932.535173963]: Get LiDAR, its header time: 61.476000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407932.635167293]: Get LiDAR, its header time: 61.576000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407932.734563493]: Get LiDAR, its header time: 61.676000[0m
+[ Preprocess ] Input[31m[ERROR] [1776407932.734618887]: Received an empty point cloud[0m
+[31m[ERROR] [1776407932.834772026]: Received an empty point cloud[0m
+[31m[ERROR] [1776407932.934428274]: Received an empty point cloud[0m
+[31m[ERROR] [1776407933.034195940]: Received an empty point cloud[0m
+[31m[ERROR] [1776407933.135437953]: Received an empty point cloud[0m
+[31m[ERROR] [1776407933.234839843]: Received an empty point cloud[0m
+[31m[ERROR] [1776407933.336040819]: Received an empty point cloud[0m
+[31m[ERROR] [1776407933.436040260]: Received an empty point cloud[0m
+[31m[ERROR] [1776407933.536096739]: Received an empty point cloud[0m
+[31m[ERROR] [1776407933.635639152]: Received an empty point cloud[0m
+[31m[ERROR] [1776407933.735243543]: Received an empty point cloud[0m
+[31m[ERROR] [1776407933.836031744]: Received an empty point cloud[0m
+[31m[ERROR] [1776407933.935837873]: Received an empty point cloud[0m
+[31m[ERROR] [1776407934.036437330]: Received an empty point cloud[0m
+[31m[ERROR] [1776407934.136040618]: Received an empty point cloud[0m
+[31m[ERROR] [1776407934.236439749]: Received an empty point cloud[0m
+[31m[ERROR] [1776407934.336234476]: Received an empty point cloud[0m
+[31m[ERROR] [1776407934.435833817]: Received an empty point cloud[0m
+[31m[ERROR] [1776407934.535641809]: Received an empty point cloud[0m
+[31m[ERROR] [1776407934.635424654]: Received an empty point cloud[0m
+[31m[ERROR] [1776407934.735843944]: Received an empty point cloud[0m
+[31m[ERROR] [1776407934.835846160]: Received an empty point cloud[0m
+[31m[ERROR] [1776407934.936225144]: Received an empty point cloud[0m
+[31m[ERROR] [1776407935.035824735]: Received an empty point cloud[0m
+[31m[ERROR] [1776407935.135630162]: Received an empty point cloud[0m
+[31m[ERROR] [1776407935.235453774]: Received an empty point cloud[0m
+ point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407932.834736970]: Get LiDAR, its header time: 61.776000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407932.934397215]: Get LiDAR, its header time: 61.876000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407933.034165644]: Get LiDAR, its header time: 61.976000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407933.135401945]: Get LiDAR, its header time: 62.076000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407933.234802463]: Get LiDAR, its header time: 62.176000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407933.336003248]: Get LiDAR, its header time: 62.276000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407933.436003211]: Get LiDAR, its header time: 62.376000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407933.536043609]: Get LiDAR, its header time: 62.476000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407933.635602023]: Get LiDAR, its header time: 62.576000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407933.735201514]: Get LiDAR, its header time: 62.676000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407933.835997860]: Get LiDAR, its header time: 62.776000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407933.935802556]: Get LiDAR, its header time: 62.876000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407934.036401292]: Get LiDAR, its header time: 62.976000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407934.136005061]: Get LiDAR, its header time: 63.076000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407934.236404894]: Get LiDAR, its header time: 63.176000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407934.336199431]: Get LiDAR, its header time: 63.276000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407934.435798030]: Get LiDAR, its header time: 63.376000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407934.535606994]: Get LiDAR, its header time: 63.476000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407934.635394638]: Get LiDAR, its header time: 63.576000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407934.735808106]: Get LiDAR, its header time: 63.676000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407934.835810694]: Get LiDAR, its header time: 63.776000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407934.936196710]: Get LiDAR, its header time: 63.876000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407935.035795289]: Get LiDAR, its header time: 63.976000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407935.135593483]: Get LiDAR, its header time: 64.076000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407935.235394613]: Get LiDAR, its header time: 64.176000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407935.335803302]: Get LiDAR, its header time: 64.276000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Outpu[31m[ERROR] [1776407935.335881639]: Received an empty point cloud[0m
+[31m[ERROR] [1776407935.436636337]: Received an empty point cloud[0m
+[31m[ERROR] [1776407935.536641249]: Received an empty point cloud[0m
+[31m[ERROR] [1776407935.636451335]: Received an empty point cloud[0m
+[31m[ERROR] [1776407935.736624953]: Received an empty point cloud[0m
+[31m[ERROR] [1776407935.836630135]: Received an empty point cloud[0m
+[31m[ERROR] [1776407935.936234335]: Received an empty point cloud[0m
+[31m[ERROR] [1776407936.036056684]: Received an empty point cloud[0m
+[31m[ERROR] [1776407936.136632587]: Received an empty point cloud[0m
+[31m[ERROR] [1776407936.236428817]: Received an empty point cloud[0m
+[31m[ERROR] [1776407936.335843822]: Received an empty point cloud[0m
+[31m[ERROR] [1776407936.436029954]: Received an empty point cloud[0m
+[31m[ERROR] [1776407936.535618244]: Received an empty point cloud[0m
+[31m[ERROR] [1776407936.635837487]: Received an empty point cloud[0m
+[31m[ERROR] [1776407936.736233864]: Received an empty point cloud[0m
+[31m[ERROR] [1776407936.836216734]: Received an empty point cloud[0m
+[31m[ERROR] [1776407936.936227486]: Received an empty point cloud[0m
+[31m[ERROR] [1776407937.036027143]: Received an empty point cloud[0m
+[31m[ERROR] [1776407937.136472601]: Received an empty point cloud[0m
+[31m[ERROR] [1776407937.236031356]: Received an empty point cloud[0m
+[31m[ERROR] [1776407937.335630827]: Received an empty point cloud[0m
+[31m[ERROR] [1776407937.435818962]: Received an empty point cloud[0m
+[31m[ERROR] [1776407937.536216651]: Received an empty point cloud[0m
+[31m[ERROR] [1776407937.636829272]: Received an empty point cloud[0m
+[31m[ERROR] [1776407937.736257552]: Received an empty point cloud[0m
+[31m[ERROR] [1776407937.836016813]: Received an empty point cloud[0m
+[31m[ERROR] [1776407937.936463674]: Received an empty point cloud[0m
+t point number: 0 
+[0m[INFO] [1776407935.436599729]: Get LiDAR, its header time: 64.376000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407935.536602977]: Get LiDAR, its header time: 64.476000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407935.636415067]: Get LiDAR, its header time: 64.576000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407935.736591049]: Get LiDAR, its header time: 64.676000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407935.836595530]: Get LiDAR, its header time: 64.776000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407935.936194741]: Get LiDAR, its header time: 64.876000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407936.036020616]: Get LiDAR, its header time: 64.976000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407936.136603813]: Get LiDAR, its header time: 65.076000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407936.236393190]: Get LiDAR, its header time: 65.176000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407936.335811381]: Get LiDAR, its header time: 65.276000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407936.435993565]: Get LiDAR, its header time: 65.376000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407936.535587867]: Get LiDAR, its header time: 65.476000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407936.635801329]: Get LiDAR, its header time: 65.576000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407936.736196483]: Get LiDAR, its header time: 65.676000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407936.836186687]: Get LiDAR, its header time: 65.776000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407936.936191289]: Get LiDAR, its header time: 65.876000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407937.035991436]: Get LiDAR, its header time: 65.976000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407937.136423198]: Get LiDAR, its header time: 66.076000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407937.235993645]: Get LiDAR, its header time: 66.176000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407937.335595030]: Get LiDAR, its header time: 66.276000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407937.435788675]: Get LiDAR, its header time: 66.376000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407937.536187306]: Get LiDAR, its header time: 66.476000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407937.636792764]: Get LiDAR, its header time: 66.576000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407937.736226855]: Get LiDAR, its header time: 66.676000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407937.835987438]: Get LiDAR, its header time: 66.776000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407937.936414862]: Get LiDAR, its header time: 66.876000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [177640793[31m[ERROR] [1776407938.036246569]: Received an empty point cloud[0m
+[31m[ERROR] [1776407938.137032676]: Received an empty point cloud[0m
+[31m[ERROR] [1776407938.236853973]: Received an empty point cloud[0m
+[31m[ERROR] [1776407938.337234299]: Received an empty point cloud[0m
+[31m[ERROR] [1776407938.437013217]: Received an empty point cloud[0m
+[31m[ERROR] [1776407938.536631654]: Received an empty point cloud[0m
+[31m[ERROR] [1776407938.636630955]: Received an empty point cloud[0m
+[31m[ERROR] [1776407938.736228652]: Received an empty point cloud[0m
+[31m[ERROR] [1776407938.835829666]: Received an empty point cloud[0m
+[31m[ERROR] [1776407938.937233041]: Received an empty point cloud[0m
+[31m[ERROR] [1776407939.036833955]: Received an empty point cloud[0m
+[31m[ERROR] [1776407939.137631704]: Received an empty point cloud[0m
+[31m[ERROR] [1776407939.237430770]: Received an empty point cloud[0m
+[31m[ERROR] [1776407939.337615118]: Received an empty point cloud[0m
+[31m[ERROR] [1776407939.437641149]: Received an empty point cloud[0m
+[31m[ERROR] [1776407939.537416149]: Received an empty point cloud[0m
+[31m[ERROR] [1776407939.637629733]: Received an empty point cloud[0m
+[31m[ERROR] [1776407939.737232941]: Received an empty point cloud[0m
+[31m[ERROR] [1776407939.837017970]: Received an empty point cloud[0m
+[31m[ERROR] [1776407939.937035185]: Received an empty point cloud[0m
+[31m[ERROR] [1776407940.036818641]: Received an empty point cloud[0m
+[31m[ERROR] [1776407940.136616284]: Received an empty point cloud[0m
+[31m[ERROR] [1776407940.236213831]: Received an empty point cloud[0m
+[31m[ERROR] [1776407940.337032750]: Received an empty point cloud[0m
+[31m[ERROR] [1776407940.438059348]: Received an empty point cloud[0m
+[31m[ERROR] [1776407940.537424119]: Received an empty point cloud[0m
+8.036186847]: Get LiDAR, its header time: 66.976000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407938.136996799]: Get LiDAR, its header time: 67.076000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407938.236818296]: Get LiDAR, its header time: 67.176000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407938.337196408]: Get LiDAR, its header time: 67.276000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407938.436984744]: Get LiDAR, its header time: 67.376000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407938.536595235]: Get LiDAR, its header time: 67.476000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407938.636593494]: Get LiDAR, its header time: 67.576000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407938.736190942]: Get LiDAR, its header time: 67.676000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407938.835792517]: Get LiDAR, its header time: 67.776000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407938.937192956]: Get LiDAR, its header time: 67.876000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407939.036796315]: Get LiDAR, its header time: 67.976000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407939.137594565]: Get LiDAR, its header time: 68.076000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407939.237394412]: Get LiDAR, its header time: 68.176000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407939.337585763]: Get LiDAR, its header time: 68.276000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407939.437604841]: Get LiDAR, its header time: 68.376000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407939.537386624]: Get LiDAR, its header time: 68.476000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407939.637593084]: Get LiDAR, its header time: 68.576000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407939.737195240]: Get LiDAR, its header time: 68.676000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407939.836987493]: Get LiDAR, its header time: 68.776000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407939.936997604]: Get LiDAR, its header time: 68.876000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407940.036787993]: Get LiDAR, its header time: 68.976000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407940.136587049]: Get LiDAR, its header time: 69.076000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407940.236184326]: Get LiDAR, its header time: 69.176000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407940.336995259]: Get LiDAR, its header time: 69.276000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407940.438015285]: Get LiDAR, its header time: 69.376000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407940.537394253]: Get LiDAR, its header time: 69.476000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407940.637191245]: Get LiDAR, its header time[31m[ERROR] [1776407940.637260925]: Received an empty point cloud[0m
+[31m[ERROR] [1776407940.737428823]: Received an empty point cloud[0m
+[31m[ERROR] [1776407940.837629461]: Received an empty point cloud[0m
+[31m[ERROR] [1776407940.937414571]: Received an empty point cloud[0m
+[31m[ERROR] [1776407941.037212905]: Received an empty point cloud[0m
+[31m[ERROR] [1776407941.137013062]: Received an empty point cloud[0m
+[31m[ERROR] [1776407941.237255830]: Received an empty point cloud[0m
+[31m[ERROR] [1776407941.337007727]: Received an empty point cloud[0m
+[31m[ERROR] [1776407941.437417007]: Received an empty point cloud[0m
+[31m[ERROR] [1776407941.537204171]: Received an empty point cloud[0m
+[31m[ERROR] [1776407941.637006763]: Received an empty point cloud[0m
+[31m[ERROR] [1776407941.737239923]: Received an empty point cloud[0m
+[31m[ERROR] [1776407941.836399368]: Received an empty point cloud[0m
+[31m[ERROR] [1776407941.937627585]: Received an empty point cloud[0m
+[31m[ERROR] [1776407942.037429485]: Received an empty point cloud[0m
+[31m[ERROR] [1776407942.137215006]: Received an empty point cloud[0m
+[31m[ERROR] [1776407942.237429591]: Received an empty point cloud[0m
+[31m[ERROR] [1776407942.338423688]: Received an empty point cloud[0m
+[31m[ERROR] [1776407942.443215250]: Received an empty point cloud[0m
+[31m[ERROR] [1776407942.539026744]: Received an empty point cloud[0m
+[31m[ERROR] [1776407942.639642442]: Received an empty point cloud[0m
+[31m[ERROR] [1776407942.739031388]: Received an empty point cloud[0m
+[31m[ERROR] [1776407942.839415180]: Received an empty point cloud[0m
+[31m[ERROR] [1776407942.939830141]: Received an empty point cloud[0m
+[31m[ERROR] [1776407943.039433950]: Received an empty point cloud[0m
+[31m[ERROR] [1776407943.139615964]: Received an empty point cloud[0m
+: 69.576000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407940.737393486]: Get LiDAR, its header time: 69.676000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407940.837592833]: Get LiDAR, its header time: 69.776000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407940.937385777]: Get LiDAR, its header time: 69.876000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407941.037183860]: Get LiDAR, its header time: 69.976000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407941.136984168]: Get LiDAR, its header time: 70.076000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407941.237211888]: Get LiDAR, its header time: 70.176000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407941.336982730]: Get LiDAR, its header time: 70.276000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407941.437384657]: Get LiDAR, its header time: 70.376000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407941.537178993]: Get LiDAR, its header time: 70.476000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407941.636980654]: Get LiDAR, its header time: 70.576000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407941.737202272]: Get LiDAR, its header time: 70.676000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407941.836376365]: Get LiDAR, its header time: 70.776000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407941.937592389]: Get LiDAR, its header time: 70.876000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407942.037393859]: Get LiDAR, its header time: 70.976000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407942.137186272]: Get LiDAR, its header time: 71.076000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407942.237393323]: Get LiDAR, its header time: 71.176000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407942.338394784]: Get LiDAR, its header time: 71.276000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407942.443187217]: Get LiDAR, its header time: 71.376000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407942.538995045]: Get LiDAR, its header time: 71.476000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407942.639611684]: Get LiDAR, its header time: 71.576000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407942.738994258]: Get LiDAR, its header time: 71.676000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407942.839386436]: Get LiDAR, its header time: 71.776000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407942.939793843]: Get LiDAR, its header time: 71.876000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407943.039396991]: Get LiDAR, its header time: 71.976000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407943.139586729]: Get LiDAR, its header time: 72.076000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407943.239619674]: Get LiDAR, its header time: 72.176000[0m
+[ Preprocess ] Input poi[31m[ERROR] [1776407943.239692460]: Received an empty point cloud[0m
+[31m[ERROR] [1776407943.339419731]: Received an empty point cloud[0m
+[31m[ERROR] [1776407943.439829221]: Received an empty point cloud[0m
+[31m[ERROR] [1776407943.540033357]: Received an empty point cloud[0m
+[31m[ERROR] [1776407943.638878202]: Received an empty point cloud[0m
+[31m[ERROR] [1776407943.738453768]: Received an empty point cloud[0m
+[31m[ERROR] [1776407943.838428754]: Received an empty point cloud[0m
+[31m[ERROR] [1776407943.938813238]: Received an empty point cloud[0m
+[31m[ERROR] [1776407944.039431530]: Received an empty point cloud[0m
+[31m[ERROR] [1776407944.138812832]: Received an empty point cloud[0m
+[31m[ERROR] [1776407944.238038622]: Received an empty point cloud[0m
+[31m[ERROR] [1776407944.338218902]: Received an empty point cloud[0m
+[31m[ERROR] [1776407944.438610640]: Received an empty point cloud[0m
+[31m[ERROR] [1776407944.538415185]: Received an empty point cloud[0m
+[31m[ERROR] [1776407944.638427080]: Received an empty point cloud[0m
+[31m[ERROR] [1776407944.738428385]: Received an empty point cloud[0m
+[31m[ERROR] [1776407944.838027896]: Received an empty point cloud[0m
+[31m[ERROR] [1776407944.938418511]: Received an empty point cloud[0m
+[31m[ERROR] [1776407945.039252098]: Received an empty point cloud[0m
+[31m[ERROR] [1776407945.139215672]: Received an empty point cloud[0m
+[31m[ERROR] [1776407945.240045661]: Received an empty point cloud[0m
+[31m[ERROR] [1776407945.340242022]: Received an empty point cloud[0m
+[31m[ERROR] [1776407945.440611387]: Received an empty point cloud[0m
+[31m[ERROR] [1776407945.541044052]: Received an empty point cloud[0m
+[31m[ERROR] [1776407945.641045968]: Received an empty point cloud[0m
+[31m[ERROR] [1776407945.741031753]: Received an empty point cloud[0m
+nt number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407943.339388422]: Get LiDAR, its header time: 72.276000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407943.439790549]: Get LiDAR, its header time: 72.376000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407943.539995506]: Get LiDAR, its header time: 72.476000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407943.638812108]: Get LiDAR, its header time: 72.576000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407943.738418452]: Get LiDAR, its header time: 72.676000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407943.838392867]: Get LiDAR, its header time: 72.776000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407943.938785526]: Get LiDAR, its header time: 72.876000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407944.039394080]: Get LiDAR, its header time: 72.976000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407944.138784498]: Get LiDAR, its header time: 73.076000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407944.237997635]: Get LiDAR, its header time: 73.176000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407944.338187664]: Get LiDAR, its header time: 73.276000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407944.438582156]: Get LiDAR, its header time: 73.376000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407944.538387293]: Get LiDAR, its header time: 73.476000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407944.638391443]: Get LiDAR, its header time: 73.576000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407944.738392478]: Get LiDAR, its header time: 73.676000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407944.837991257]: Get LiDAR, its header time: 73.776000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407944.938384898]: Get LiDAR, its header time: 73.876000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407945.039209608]: Get LiDAR, its header time: 73.976000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407945.139187048]: Get LiDAR, its header time: 74.076000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407945.240003452]: Get LiDAR, its header time: 74.176000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407945.340205293]: Get LiDAR, its header time: 74.276000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407945.440582904]: Get LiDAR, its header time: 74.376000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407945.541003515]: Get LiDAR, its header time: 74.476000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407945.641011874]: Get LiDAR, its header time: 74.576000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407945.740994243]: Get LiDAR, its header time: 74.676000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407945.841402972]: Get LiDAR, its header time: 74.776000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output po[31m[ERROR] [1776407945.841469567]: Received an empty point cloud[0m
+[31m[ERROR] [1776407945.941434343]: Received an empty point cloud[0m
+[31m[ERROR] [1776407946.040825183]: Received an empty point cloud[0m
+[31m[ERROR] [1776407946.141032384]: Received an empty point cloud[0m
+[31m[ERROR] [1776407946.240227036]: Received an empty point cloud[0m
+[31m[ERROR] [1776407946.340231346]: Received an empty point cloud[0m
+[31m[ERROR] [1776407946.440828639]: Received an empty point cloud[0m
+[31m[ERROR] [1776407946.541029248]: Received an empty point cloud[0m
+[31m[ERROR] [1776407946.642030479]: Received an empty point cloud[0m
+[31m[ERROR] [1776407946.742039618]: Received an empty point cloud[0m
+[31m[ERROR] [1776407946.842041094]: Received an empty point cloud[0m
+[31m[ERROR] [1776407946.941039156]: Received an empty point cloud[0m
+[31m[ERROR] [1776407947.041242711]: Received an empty point cloud[0m
+[31m[ERROR] [1776407947.141617967]: Received an empty point cloud[0m
+[31m[ERROR] [1776407947.241351660]: Received an empty point cloud[0m
+[31m[ERROR] [1776407947.341381328]: Received an empty point cloud[0m
+[31m[ERROR] [1776407947.440761819]: Received an empty point cloud[0m
+[31m[ERROR] [1776407947.540798119]: Received an empty point cloud[0m
+[31m[ERROR] [1776407947.640325685]: Received an empty point cloud[0m
+[31m[ERROR] [1776407947.740545039]: Received an empty point cloud[0m
+[31m[ERROR] [1776407947.840541625]: Received an empty point cloud[0m
+[31m[ERROR] [1776407947.941156351]: Received an empty point cloud[0m
+[31m[ERROR] [1776407948.040756523]: Received an empty point cloud[0m
+[31m[ERROR] [1776407948.140343381]: Received an empty point cloud[0m
+[31m[ERROR] [1776407948.240548307]: Received an empty point cloud[0m
+[31m[ERROR] [1776407948.339948905]: Received an empty point cloud[0m
+[31m[ERROR] [1776407948.439941845]: Received an empty point cloud[0m
+int number: 0 
+[0m[INFO] [1776407945.941392976]: Get LiDAR, its header time: 74.876000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407946.040787072]: Get LiDAR, its header time: 74.976000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407946.141001707]: Get LiDAR, its header time: 75.076000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407946.240191218]: Get LiDAR, its header time: 75.176000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407946.340194507]: Get LiDAR, its header time: 75.276000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407946.440792411]: Get LiDAR, its header time: 75.376000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407946.540993040]: Get LiDAR, its header time: 75.476000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407946.641993680]: Get LiDAR, its header time: 75.576000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407946.741998992]: Get LiDAR, its header time: 75.676000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407946.842001299]: Get LiDAR, its header time: 75.776000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407946.940994833]: Get LiDAR, its header time: 75.876000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407947.041193278]: Get LiDAR, its header time: 75.976000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407947.141554599]: Get LiDAR, its header time: 76.076000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407947.241315482]: Get LiDAR, its header time: 76.176000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407947.341331996]: Get LiDAR, its header time: 76.276000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407947.440720742]: Get LiDAR, its header time: 76.376000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407947.540750560]: Get LiDAR, its header time: 76.476000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407947.640297512]: Get LiDAR, its header time: 76.576000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407947.740508090]: Get LiDAR, its header time: 76.676000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407947.840506319]: Get LiDAR, its header time: 76.776000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407947.941114893]: Get LiDAR, its header time: 76.876000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407948.040719283]: Get LiDAR, its header time: 76.976000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407948.140307133]: Get LiDAR, its header time: 77.076000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407948.240512711]: Get LiDAR, its header time: 77.176000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407948.339912187]: Get LiDAR, its header time: 77.276000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407948.439906669]: Get LiDAR, its header time: 77.376000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407948.53[31m[ERROR] [1776407948.539976693]: Received an empty point cloud[0m
+[31m[ERROR] [1776407948.639947600]: Received an empty point cloud[0m
+[31m[ERROR] [1776407948.740153900]: Received an empty point cloud[0m
+[31m[ERROR] [1776407948.840184019]: Received an empty point cloud[0m
+[31m[ERROR] [1776407948.939791034]: Received an empty point cloud[0m
+[31m[ERROR] [1776407949.039754608]: Received an empty point cloud[0m
+[31m[ERROR] [1776407949.139760151]: Received an empty point cloud[0m
+[31m[ERROR] [1776407949.239570067]: Received an empty point cloud[0m
+[31m[ERROR] [1776407949.340143535]: Received an empty point cloud[0m
+[31m[ERROR] [1776407949.440144509]: Received an empty point cloud[0m
+[31m[ERROR] [1776407949.540136617]: Received an empty point cloud[0m
+[31m[ERROR] [1776407949.640737757]: Received an empty point cloud[0m
+[31m[ERROR] [1776407949.740757400]: Received an empty point cloud[0m
+[31m[ERROR] [1776407949.841342798]: Received an empty point cloud[0m
+[31m[ERROR] [1776407949.941759339]: Received an empty point cloud[0m
+[31m[ERROR] [1776407950.041530379]: Received an empty point cloud[0m
+[31m[ERROR] [1776407950.141339201]: Received an empty point cloud[0m
+[31m[ERROR] [1776407950.241615198]: Received an empty point cloud[0m
+[31m[ERROR] [1776407950.341026173]: Received an empty point cloud[0m
+[31m[ERROR] [1776407950.441409572]: Received an empty point cloud[0m
+9908635]: Get LiDAR, its header time: 77.476000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407948.639910681]: Get LiDAR, its header time: 77.576000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407948.740111380]: Get LiDAR, its header time: 77.676000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407948.840134396]: Get LiDAR, its header time: 77.776000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407948.939718377]: Get LiDAR, its header time: 77.876000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407949.039718110]: Get LiDAR, its header time: 77.976000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407949.139723692]: Get LiDAR, its header time: 78.076000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407949.239528519]: Get LiDAR, its header time: 78.176000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407949.340107066]: Get LiDAR, its header time: 78.276000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407949.440107309]: Get LiDAR, its header time: 78.376000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407949.540100539]: Get LiDAR, its header time: 78.476000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407949.640706578]: Get LiDAR, its header time: 78.576000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407949.740721292]: Get LiDAR, its header time: 78.676000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407949.841305978]: Get LiDAR, its header time: 78.776000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407949.941728120]: Get LiDAR, its header time: 78.876000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407950.041499451]: Get LiDAR, its header time: 78.976000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407950.141306990]: Get LiDAR, its header time: 79.076000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407950.241578840]: Get LiDAR, its header time: 79.176000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407950.340988853]: Get LiDAR, its header time: 79.276000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+[0m[INFO] [1776407950.441380407]: Get LiDAR, its header time: 79.376000[0m
+[ Preprocess ] Input point number: 268 
+[ Preprocess ] Output point number: 0 
+... logging to /home/dev/.ros/log/f40a1574-3a27-11f1-b81d-4845e678ee41/roslaunch-tuf-23927.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/workspace/lib/fast-livo2/launch/mapping_avia.launch
+[1mstarted roslaunch server http://tuf:44251/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /common/img_en: 0
+ * /common/img_topic: /left_camera/image
+ * /common/imu_topic: /livox/imu
+ * /common/lid_topic: /livox/lidar
+ * /common/lidar_en: 1
+ * /common/ros_driver_bug_fix: False
+ * /evo/pose_output_en: False
+ * /evo/seq_name: CBD_Building_01
+ * /extrin_calib/Pcl: [0.0194384, 0.104...
+ * /extrin_calib/Rcl: [0.00610193, -0.9...
+ * /extrin_calib/extrinsic_R: [1, 0, 0, 0, 1, 0...
+ * /extrin_calib/extrinsic_T: [0.04165, 0.02326...
+ * /image_save/img_save_en: False
+ * /image_save/interval: 1
+ * /imu/acc_cov: 0.5
+ * /imu/b_acc_cov: 0.0001
+ * /imu/b_gyr_cov: 0.0001
+ * /imu/gyr_cov: 0.3
+ * /imu/imu_en: True
+ * /imu/imu_int_frame: 30
+ * /laserMapping/cam_cx: 626.91359
+ * /laserMapping/cam_cy: 522.799224
+ * /laserMapping/cam_d0: -0.07616
+ * /laserMapping/cam_d1: 0.123001
+ * /laserMapping/cam_d2: -0.00113
+ * /laserMapping/cam_d3: 0.000251
+ * /laserMapping/cam_fx: 1293.56944
+ * /laserMapping/cam_fy: 1293.3155
+ * /laserMapping/cam_height: 1024
+ * /laserMapping/cam_model: Pinhole
+ * /laserMapping/cam_width: 1280
+ * /laserMapping/scale: 0.5
+ * /lio/beam_err: 0.05
+ * /lio/dept_err: 0.02
+ * /lio/layer_init_num: [5, 5, 5, 5, 5]
+ * /lio/max_iterations: 5
+ * /lio/max_layer: 2
+ * /lio/max_points_num: 50
+ * /lio/min_eigen_value: 0.0025
+ * /lio/voxel_size: 0.5
+ * /local_map/half_map_size: 100
+ * /local_map/map_sliding_en: False
+ * /local_map/sliding_thresh: 8
+ * /pcd_save/colmap_output_en: False
+ * /pcd_save/filter_size_pcd: 0.15
+ * /pcd_save/interval: -1
+ * /pcd_save/pcd_save_en: False
+ * /pcd_save/type: 0
+ * /preprocess/blind: 0.8
+ * /preprocess/filter_size_surf: 0.1
+ * /preprocess/lidar_type: 1
+ * /preprocess/point_filter_num: 1
+ * /preprocess/scan_line: 6
+ * /publish/blind_rgb_points: 0.0
+ * /publish/dense_map_en: True
+ * /publish/pub_effect_point_en: False
+ * /publish/pub_plane_en: False
+ * /publish/pub_scan_num: 1
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+ * /time_offset/exposure_time_init: 0.0
+ * /time_offset/img_time_offset: 0.1
+ * /time_offset/imu_time_offset: 0.0
+ * /uav/gravity_align_en: False
+ * /uav/imu_rate_odom: False
+ * /vio/exposure_estimate_en: True
+ * /vio/img_point_cov: 100
+ * /vio/inv_expo_cov: 0.1
+ * /vio/inverse_composition_en: False
+ * /vio/max_iterations: 5
+ * /vio/normal_en: True
+ * /vio/outlier_threshold: 1000
+ * /vio/patch_pyrimid_level: 4
+ * /vio/patch_size: 8
+ * /vio/raycast_en: False
+
+NODES
+  /
+    laserMapping (fast_livo/fastlivo_mapping)
+    republish (image_transport/republish)
+
+[1mROS_MASTER_URI=http://127.0.0.1:12611[0m
+]2;/workspace/lib/fast-livo2/launch/mapping_avia.launch http://127.0.0.1:12611
+[1mprocess[laserMapping-1]: started with pid [23942][0m
+[1mprocess[republish-2]: started with pid [23943][0m
+[republish-2] killing on exit
+[laserMapping-1] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

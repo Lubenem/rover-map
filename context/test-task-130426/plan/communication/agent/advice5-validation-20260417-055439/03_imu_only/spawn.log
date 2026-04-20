@@ -1,0 +1,4 @@
+[INFO] [1776405384.766798]: Loading model XML from file /workspace/lib/PX4-Autopilot/Tools/sitl_gazebo/models/rover/rover_no_velodyne_imu.sdf
+[INFO] [1776405384.769921]: Waiting for service /gazebo/spawn_sdf_model
+[INFO] [1776405384.772066]: Calling service /gazebo/spawn_sdf_model
+[INFO] [1776405385.073621]: Spawn status: SpawnModel: Successfully spawned entity

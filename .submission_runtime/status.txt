@@ -1,0 +1,7 @@
+status=running
+world=/workspace/lib/PX4-Autopilot/Tools/sitl_gazebo/worlds/warehouse.world
+model=/workspace/lib/PX4-Autopilot/Tools/sitl_gazebo/models/rover/rover_no_velodyne_rplidar_imu.sdf
+rviz=1
+gazebo_gui=1
+blind_override=0.1
+started_at=2026-04-20T05:36:39+00:00

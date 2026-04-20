@@ -1,0 +1,27 @@
+services:
+  rover-map:
+    container_name: rover-map
+    image: rover-map:dev
+    build:
+      context: ../..
+      dockerfile: infra/docker/Dockerfile
+      args:
+        USER_UID: ${UID:-1000}
+        USER_GID: ${GID:-1000}
+        USERNAME: ${USERNAME:-dev}
+    network_mode: host
+    ipc: host
+    stdin_open: true
+    tty: true
+    command: ["sleep", "infinity"]
+    working_dir: /workspace
+    environment:
+      DISPLAY: ${DISPLAY}
+      QT_X11_NO_MITSHM: "1"
+      XAUTHORITY: /tmp/.docker.xauth
+    volumes:
+      - ../..:/workspace
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - ${HOME}/.Xauthority:/tmp/.docker.xauth:ro
+    devices:
+      - /dev/dri:/dev/dri

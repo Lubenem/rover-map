@@ -1,0 +1,10 @@
+amdgpu: unknown (family_id, chip_external_rev): (148, 13)
+libGL error: failed to create dri screen
+libGL error: failed to load driver: radeonsi
+[0m[INFO] [1776405383.068104506]: Finished loading Gazebo ROS API Plugin.[0m
+[0m[INFO] [1776405383.068875653]: waitForService: Service [/gazebo/set_physics_properties] has not been advertised, waiting...[0m
+[0m[INFO] [1776405383.357976066]: waitForService: Service [/gazebo/set_physics_properties] is now available.[0m
+[0m[INFO] [1776405383.367737107]: Physics dynamic reconfigure ready.[0m
+[1;33mWarning [parser.cc:833][0m XML Attribute[version] in element[sdf] not defined in SDF, ignoring.
+[33m[WARN] [1776405385.070294353]: missing <xyzOffset>, set to default: 0 0 0[0m
+[33m[WARN] [1776405385.070320081]: missing <rpyOffset>, set to default: 0 -0 0[0m

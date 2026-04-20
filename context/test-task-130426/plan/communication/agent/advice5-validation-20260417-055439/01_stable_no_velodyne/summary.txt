@@ -1,0 +1,12 @@
+case=01_stable_no_velodyne
+model=/workspace/lib/PX4-Autopilot/Tools/sitl_gazebo/models/rover/rover_no_velodyne.sdf
+world_up=pass
+spawn_ok=pass
+clock_rate=250.036
+scan_status=n/a
+scan_rate=n/a
+imu_status=n/a
+imu_rate=n/a
+stable_30=pass
+core_alive=yes
+segfault=no

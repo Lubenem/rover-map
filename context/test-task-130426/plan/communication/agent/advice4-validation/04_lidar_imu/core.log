@@ -1,0 +1,45 @@
+amdgpu: unknown (family_id, chip_external_rev): (148, 13)
+libGL error: failed to create dri screen
+libGL error: failed to load driver: radeonsi
+[0m[INFO] [1776404602.552282526]: Finished loading Gazebo ROS API Plugin.[0m
+[0m[INFO] [1776404602.553253408]: waitForService: Service [/gazebo/set_physics_properties] has not been advertised, waiting...[0m
+[0m[INFO] [1776404602.801245243]: waitForService: Service [/gazebo/set_physics_properties] is now available.[0m
+[0m[INFO] [1776404602.809317135]: Physics dynamic reconfigure ready.[0m
+[1;33mWarning [parser.cc:833][0m XML Attribute[version] in element[sdf] not defined in SDF, ignoring.
+[33m[WARN] [1776404604.581599996]: missing <xyzOffset>, set to default: 0 0 0[0m
+[33m[WARN] [1776404604.581614854]: missing <rpyOffset>, set to default: 0 -0 0[0m
+Segmentation fault (core dumped)
+... logging to /home/dev/.ros/log/58363b84-3a20-11f1-b440-4845e678ee41/roslaunch-tuf-19474.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;/opt/ros/noetic/share/gazebo_ros/launch/empty_world.launch
+[1mstarted roslaunch server http://tuf:33751/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /gazebo/enable_ros_network: True
+ * /rosdistro: noetic
+ * /rosversion: 1.17.4
+ * /use_sim_time: False
+
+NODES
+  /
+    gazebo (gazebo_ros/gzserver)
+
+auto-starting new master
+[1mprocess[master]: started with pid [19486][0m
+[1mROS_MASTER_URI=http://127.0.0.1:12414[0m
+]2;/opt/ros/noetic/share/gazebo_ros/launch/empty_world.launch http://127.0.0.1:12414
+[1msetting /run_id to 58363b84-3a20-11f1-b440-4845e678ee41[0m
+[1mprocess[rosout-1]: started with pid [19496][0m
+started core service [/rosout]
+[1mprocess[gazebo-2]: started with pid [19502][0m
+[gazebo-2] killing on exit
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m

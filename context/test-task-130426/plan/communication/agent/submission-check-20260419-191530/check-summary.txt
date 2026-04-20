@@ -1,0 +1,13 @@
+Submission Check (20260419-191530)
+ROS_MASTER_URI=http://127.0.0.1:12711
+GAZEBO_MASTER_URI=http://127.0.0.1:12745
+
+Topic Check Table
+/laser/scan rate>0     PASS     9.988
+/livox/imu rate>0      PASS     100.698
+/points_raw width>0    PASS     301
+/livox/lidar point_num>0 PASS     301
+/cloud_registered width>0 + rate>0 PASS     width=301 rate=9.996
+
+PASS_COUNT=5
+FAIL_COUNT=0

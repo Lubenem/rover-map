@@ -1,0 +1,12 @@
+.git
+**/.git
+**/__pycache__
+**/*.pyc
+catkin_ws/build
+catkin_ws/devel
+catkin_ws/log
+catkin_ws/src
+src/Sophus/build
+src/fast-livo2
+src/rpg_vikit
+src/Sophus

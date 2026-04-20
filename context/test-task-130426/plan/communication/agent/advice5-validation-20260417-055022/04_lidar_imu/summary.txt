@@ -1,0 +1,12 @@
+case=04_lidar_imu
+model=/workspace/lib/PX4-Autopilot/Tools/sitl_gazebo/models/rover/rover_no_velodyne_rplidar_imu.sdf
+world_up=pass
+spawn_ok=pass
+clock_rate=249.902
+scan_status=pass
+scan_rate=10.008
+imu_status=pass
+imu_rate=105.483
+stable_30=pass
+core_alive=yes
+segfault=no
