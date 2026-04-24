@@ -1,0 +1,30 @@
+services:
+  rover-map-ros2:
+    container_name: rover-map-ros2
+    image: rover-map:ros2
+    build:
+      context: ../..
+      dockerfile: infra/docker/Dockerfile.ros2
+      args:
+        USER_UID: ${UID:-1000}
+        USER_GID: ${GID:-1000}
+        USERNAME: ${USERNAME:-dev}
+    network_mode: host
+    ipc: host
+    stdin_open: true
+    tty: true
+    command: ["sleep", "infinity"]
+    working_dir: /workspace
+    environment:
+      DISPLAY: ${DISPLAY}
+      QT_X11_NO_MITSHM: "1"
+      XAUTHORITY: /tmp/.docker.xauth
+      ROS_DOMAIN_ID: ${ROS_DOMAIN_ID:-42}
+      GZ_VERSION: harmonic
+      PX4_SIM_MODEL: ${PX4_SIM_MODEL:-gz_rover_differential}
+    volumes:
+      - ../..:/workspace
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - ${HOME}/.Xauthority:/tmp/.docker.xauth:ro
+    devices:
+      - /dev/dri:/dev/dri

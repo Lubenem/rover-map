@@ -1,74 +1,99 @@
 # rover-map
-Reproducible Docker workspace for FAST-LIVO2 rover mapping experiments.
+Reproducible Docker workspace for rover mapping experiments with FAST-LIVO2.
 
-## Summary
-- Objective completed: FAST-LIVO2 running on PX4 + Gazebo rover, driven through standard map, point cloud visible in RViz.
-- Rover model: `rover_no_velodyne_rplidar_imu.sdf`
-- World: `warehouse.world`
-- Pipeline: `/laser/scan -> /points_raw -> /livox/lidar`, `/imu -> /livox/imu`, output `/cloud_registered`
-- Runtime override: `/preprocess/blind=0.1`
+## Current Scope (2026-04-23)
+This repo now contains an active ROS2 pipeline for the fixes request:
+- `ROS2 Humble + Gazebo Harmonic + PX4`
+- FAST-LIVO2 ROS2 mapper publishing `/cloud_registered`
+- color-oriented lidar conversion (non-constant reflectivity)
+- automated ROS2 submission checks
 
-## Media
-- Demo video: `https://drive.google.com/file/d/1MLDMqBAZNfSqWKYbwTeoPaQuRdHAEYTY/view?usp=sharing`
-- Screenshots: not provided (video-only submission)
+Legacy ROS1 tooling is still present for fallback/history, but the current work is centered on ROS2.
 
-## Note
-- Rover motion in demo is deterministic via `tools/submission_drive.py`.
+## Current Status
+Automated ROS2 checks pass with:
+- `/laser/scan`, `/livox/imu`, `/points_raw`, `/livox/lidar`, `/cloud_registered`
+- reflectivity variance check (`> 0`)
 
-Thank you for your review.
+Important known issue:
+- real Gazebo rover lidar does not publish in this environment
+- runtime currently falls back to synthetic lidar (`lidar_source=synthetic`)
+- tracked in: `context/rm-fixes-230426/reports/open-issue-real-gazebo-lidar-fail-report.md`
 
--- 
+## Key Make Targets
+ROS2 stack:
+- `make docker-build-ros2`
+- `make docker-up-ros2`
+- `make docker-shell-ros2`
+- `make test-env-ros2`
+- `make submission-start-ros2`
+- `make submission-status-ros2`
+- `make submission-check-ros2`
+- `make submission-stop-ros2`
 
-## What this includes
-- ROS1 Noetic Ubuntu 20.04 dev container
-- Bootstrap script for FAST-LIVO2 + rpg_vikit + Sophus
-- Makefile shortcuts for build/up/shell/bootstrap/tests
+Legacy ROS1 stack remains available:
+- `make docker-build`
+- `make docker-up`
+- `make docker-shell`
+- `make bootstrap`
+- `make test-env`
 
-## Quick start
-
+## Quick Start (ROS2)
 ```bash
 cd ~/projects/rover-map
-make docker-build
-make docker-up
-make bootstrap
-make test-env
+make docker-build-ros2
+make docker-up-ros2
+make test-env-ros2
+make submission-start-ros2
+make submission-check-ros2
+make submission-stop-ros2
 ```
 
-Enter container shell:
+## ROS2 Runtime Pipeline
+Main flow:
+- LiDAR: `/laser/scan -> /points_raw -> /livox/lidar`
+- IMU: Gazebo IMU -> `/livox/imu`
+- Mapper output: `/cloud_registered`
 
-```bash
-make docker-shell
-```
+Main scripts:
+- `tools/submission_run_ros2.sh`
+- `tools/submission_check_ros2.sh`
+- `tools/scan_to_cloud_ros2.py`
+- `tools/points_to_livox_ros2.py`
+- `tools/imu_relay_ros2.py`
+- `tools/laser_scan_relay_ros2.py`
+- `tools/synthetic_lidar_ros2.py`
+- `tools/ros2_topic_probe.py`
 
-## Notes
-- Container name: `rover-map`
-- Compose service: `rover-map`
-- Workspace mount: host `~/projects/rover-map` -> container `/workspace`
-- Dependency repos live in `lib/` (host) -> `/workspace/lib` (container). Each dep keeps its own `.git`, but we do **not** commit them in this repo.
-- Patches for deps live under `lib/patches/<repo>/`.
-- This setup prepares environment only; simulation launch/config tuning is next step.
+ROS2 mapper/runtime config:
+- `config/fast_livo_ros2_rover.yaml`
+- `config/fast_livo_ros2_color.rviz`
 
-## Dependency remotes (cloned by bootstrap or manually)
-- FAST-LIVO2: https://github.com/hku-mars/FAST-LIVO2.git
-- rpg_vikit: https://github.com/xuankuzcr/rpg_vikit.git
-- Sophus: https://github.com/strasdat/Sophus.git (checkout `a621ff` in bootstrap)
-- PX4-Autopilot (manual clone): https://github.com/PX4/PX4-Autopilot.git (branch `v1.13.3`)
+## Dependencies and `colcon_ws`
+The ROS2 mapper path depends on a colcon workspace at `colcon_ws/`.
+
+### Required packages/repos in `colcon_ws/src`
+- `FAST-LIVO2-ROS2` (linked from `lib/FAST-LIVO2-ROS2`)
+- `livox_ros_driver2`
+- `rpg_vikit_ros2_fisheye` (with `vikit_common` and `vikit_ros`)
+
+`colcon_ws` contains build products and embedded third-party repos and is intentionally **not tracked** by Git.
 
 ## Git Hygiene
-Do not commit dependency repos cloned by bootstrap:
-- `lib/fast-livo2`
-- `lib/rpg_vikit`
-- `lib/Sophus`
-- `lib/PX4-Autopilot`
-- `catkin_ws/src`
+Do not commit generated/runtime folders:
+- `colcon_ws/`
+- `.submission_runtime/`
+- `.submission_runtime_ros2/`
+- `artifacts/`
+- `log/`
+- `tools/__pycache__/`
 
-These are fetched automatically by `make bootstrap` (except PX4-Autopilot, which we place manually in `lib/`).
+Do not commit vendored dependency repos under `lib/`.
 
-If they were staged accidentally:
+## Manual Submission / Recording Guide
+Use:
+- `manual-submission-video-guide-ros2.md`
 
-```bash
-git rm --cached -r lib/fast-livo2 lib/rpg_vikit lib/Sophus lib/PX4-Autopilot catkin_ws/src
-```
-
-Patches you should keep in Git:
-- `lib/patches/PX4-Autopilot/px4-sitl-ros1-lidar-imu.patch`
+Phase reports and evidence:
+- `context/rm-fixes-230426/reports/`
+- `artifacts/ros2/submission-check-<timestamp>/`

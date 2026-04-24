@@ -4,7 +4,6 @@
  - read Ukrainian text from the `.jpeg` picture and convert it to the English `.md` text
 
 ##
-
 [fixes-request.md](~/projects/rover-map/context/rm-fixes-230426/docs/fixes-request.md)
 - good job! I've moved the file into a correct location
 
@@ -26,6 +25,14 @@
 
 * Run a deep research on the referenced data. Create a meaningful, working and comprehesnive plan. Explain like I am 5, keep it simple.
 
+##
+Incredible!
+Now let's implement the fixes phase-by-phase according to your plan document!
+Do the first phase
 
+##
+[rports](~/projects/rover-map/context/rm-fixes-230426/reports/)
+* please on finishing each phase create a report file please (create one for each previous phase that is already done)
+* do the next phase, verify it and create report file
 
 

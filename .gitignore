@@ -7,3 +7,11 @@ catkin_ws/src/
 /lib/*
 !/lib/patches/
 !/lib/patches/**
+
+# ROS2 workspace + runtime/generated artifacts
+colcon_ws/
+.submission_runtime/
+.submission_runtime_ros2/
+artifacts/
+log/
+tools/__pycache__/
