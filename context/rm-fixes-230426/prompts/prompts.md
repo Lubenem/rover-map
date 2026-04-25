@@ -35,4 +35,10 @@ Do the first phase
 * please on finishing each phase create a report file please (create one for each previous phase that is already done)
 * do the next phase, verify it and create report file
 
-
+##
+[advise1.md](~/projects/rover-map/context/rm-fixes-230426/llm/sage/advise1.md)
+ - I've consulted the `Sage` and he gave us a new advise file
+ - please follow it 
+[agent](~/projects/rover-map/context/rm-fixes-230426/llm/agent)
+ - here is your communication folder, only add `.md` files here from now on
+ - put the new report file into the `reports` folder here

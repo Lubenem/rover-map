@@ -5,7 +5,7 @@ SERVICE_ROS2=rover-map-ros2
 
 .PHONY: docker-build docker-up docker-down docker-shell bootstrap test-env
 .PHONY: docker-build-ros2 docker-up-ros2 docker-down-ros2 docker-shell-ros2 test-env-ros2
-.PHONY: submission-start-ros2 submission-status-ros2 submission-stop-ros2 submission-check-ros2
+.PHONY: submission-start-ros2 submission-start-ros2-real submission-status-ros2 submission-stop-ros2 submission-check-ros2
 .PHONY: px4-prepare-ros2
 
 docker-build:
@@ -46,6 +46,9 @@ px4-prepare-ros2:
 
 submission-start-ros2:
 	docker compose -f $(COMPOSE_FILE_ROS2) exec $(SERVICE_ROS2) bash -lc "/workspace/tools/submission_run_ros2.sh start --headless --timeout 900"
+
+submission-start-ros2-real:
+	docker compose -f $(COMPOSE_FILE_ROS2) exec $(SERVICE_ROS2) bash -lc "/workspace/tools/submission_run_ros2.sh start --headless --timeout 900 --require-real-lidar"
 
 submission-status-ros2:
 	docker compose -f $(COMPOSE_FILE_ROS2) exec $(SERVICE_ROS2) bash -lc "/workspace/tools/submission_run_ros2.sh status"

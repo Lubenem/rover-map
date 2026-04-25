@@ -13,6 +13,7 @@ HEADLESS=1
 FOREGROUND=0
 TARGET_OVERRIDE=""
 WAIT_TIMEOUT=120
+REQUIRE_REAL_LIDAR=0
 
 while [ $# -gt 0 ]; do
   case "$1" in
@@ -40,6 +41,9 @@ while [ $# -gt 0 ]; do
         echo "--timeout expects integer seconds" >&2
         exit 1
       fi
+      ;;
+    --require-real-lidar)
+      REQUIRE_REAL_LIDAR=1
       ;;
     *)
       echo "Unknown option: $1" >&2
@@ -189,11 +193,7 @@ prepare_rover_lidar_overlay() {
   local target="$1"
   local model="${target#gz_}"
   local src_model_dir="${PX4_DIR}/Tools/simulation/gz/models/${model}"
-  local overlay_root="${RUNTIME_DIR}/model_overrides"
-  local overlay_model_dir="${overlay_root}/${model}"
-  local overlay_sdf="${overlay_model_dir}/model.sdf"
-
-  mkdir -p "${overlay_root}"
+  local target_sdf="${src_model_dir}/model.sdf"
 
   if [ ! -d "${src_model_dir}" ]; then
     return 0
@@ -204,14 +204,7 @@ prepare_rover_lidar_overlay() {
     return 0
   fi
 
-  # Keep an explicitly managed CPU ray sensor for deterministic headless output.
-  if grep -Eq "sensor name=['\"]submission_lidar_sensor" "${src_model_dir}/model.sdf"; then
-    return 0
-  fi
-
-  rsync -a --delete "${src_model_dir}/" "${overlay_model_dir}/"
-
-  python3 - "${overlay_sdf}" <<'PY'
+  python3 - "${target_sdf}" <<'PY'
 import re
 import sys
 from pathlib import Path
@@ -219,22 +212,12 @@ from pathlib import Path
 path = Path(sys.argv[1])
 text = path.read_text()
 
-if "sensor name=\"submission_lidar_sensor\"" in text:
-    sys.exit(0)
-
-pattern = re.compile(r"(<link name=['\"]base_link['\"]>)(.*?)(</link>)", re.S)
-match = pattern.search(text)
-if not match:
-    print("Could not find base_link in model.sdf", file=sys.stderr)
-    sys.exit(1)
-
 snippet = """
-      <sensor name="submission_lidar_sensor" type="lidar">
+      <sensor name="submission_lidar_sensor" type="gpu_lidar">
         <gz_frame_id>base_link</gz_frame_id>
-        <always_on>1</always_on>
+        <pose relative_to="base_link">0.3 0 0.25 0 0 0</pose>
         <update_rate>15</update_rate>
-        <topic>lidar</topic>
-        <lidar>
+        <ray>
           <scan>
             <horizontal>
               <samples>720</samples>
@@ -248,16 +231,31 @@ snippet = """
             <max>50.0</max>
             <resolution>0.01</resolution>
           </range>
-        </lidar>
+        </ray>
+        <always_on>1</always_on>
+        <visualize>true</visualize>
       </sensor>
 """
+
+sensor_pattern = re.compile(
+    r"\s*<sensor\s+name=['\"]submission_lidar_sensor['\"].*?</sensor>\s*",
+    re.S,
+)
+if sensor_pattern.search(text):
+    text = sensor_pattern.sub("\n" + snippet + "\n", text, count=1)
+    path.write_text(text)
+    sys.exit(0)
+
+pattern = re.compile(r"(<link name=['\"]base_link['\"]>)(.*?)(</link>)", re.S)
+match = pattern.search(text)
+if not match:
+    print("Could not find base_link in model.sdf", file=sys.stderr)
+    sys.exit(1)
 
 body = match.group(2).rstrip() + "\n" + snippet + "\n    "
 patched = text[:match.start()] + match.group(1) + body + match.group(3) + text[match.end():]
 path.write_text(patched)
 PY
-
-  export GZ_SIM_RESOURCE_PATH="${overlay_root}:${GZ_SIM_RESOURCE_PATH:-}"
 }
 
 wait_for_stack_ready() {
@@ -314,7 +312,10 @@ discover_gz_topics() {
       IMU_GZ_TOPIC="$(grep -E "^/world/${SUBMISSION_WORLD_NAME}/model/${SUBMISSION_MODEL_NAME}/.*imu" "${TOPICS_LOG}" | head -n 1 || true)"
     fi
 
-    LIDAR_GZ_TOPIC="$(grep -E "^/world/${SUBMISSION_WORLD_NAME}/model/${SUBMISSION_MODEL_NAME}/.*/sensor/.*/(scan|points)$" "${TOPICS_LOG}" | grep -E 'lidar|laser' | head -n 1 || true)"
+    LIDAR_GZ_TOPIC="$(grep -E "^/world/${SUBMISSION_WORLD_NAME}/model/${SUBMISSION_MODEL_NAME}/.*/sensor/submission_lidar_sensor/(scan|points)$" "${TOPICS_LOG}" | head -n 1 || true)"
+    if [ -z "${LIDAR_GZ_TOPIC}" ]; then
+      LIDAR_GZ_TOPIC="$(grep -E "^/world/${SUBMISSION_WORLD_NAME}/model/${SUBMISSION_MODEL_NAME}/.*/sensor/.*/(scan|points)$" "${TOPICS_LOG}" | grep -E 'lidar|laser' | head -n 1 || true)"
+    fi
     if [ -z "${LIDAR_GZ_TOPIC}" ]; then
       LIDAR_GZ_TOPIC="$(grep -E "^/world/${SUBMISSION_WORLD_NAME}/model/${SUBMISSION_MODEL_NAME}/.*/(scan|points)$" "${TOPICS_LOG}" | grep -E 'lidar|laser' | head -n 1 || true)"
     fi
@@ -357,6 +358,11 @@ discover_gz_topics() {
   if [ -n "${active_lidar_topic}" ]; then
     LIDAR_GZ_TOPIC="${active_lidar_topic}"
   else
+    if [ "${REQUIRE_REAL_LIDAR}" -eq 1 ]; then
+      echo "Gazebo LiDAR not publishing and --require-real-lidar is set." >&2
+      echo "Failing instead of using synthetic fallback." >&2
+      return 1
+    fi
     echo "Gazebo LiDAR not publishing; switching to synthetic Phase D scan source." >&2
     LIDAR_SOURCE="synthetic"
     LIDAR_GZ_TOPIC="/phase_d/fallback_scan"
@@ -582,6 +588,8 @@ export SUBMISSION_GZ_IMU_TOPIC=${IMU_GZ_TOPIC}
 export SUBMISSION_GZ_LIDAR_TOPIC=${LIDAR_GZ_TOPIC}
 export SUBMISSION_LIDAR_SOURCE=${LIDAR_SOURCE}
 export SUBMISSION_MAPPER_CONFIG=${MAPPER_CONFIG}
+export SUBMISSION_REQUIRE_REAL_LIDAR=${REQUIRE_REAL_LIDAR}
+export SUBMISSION_GZ_SIM_RESOURCE_PATH=${GZ_SIM_RESOURCE_PATH:-}
 EOT
 }
 
@@ -601,6 +609,7 @@ model=${SUBMISSION_MODEL_NAME}
 imu_gz_topic=${IMU_GZ_TOPIC}
 lidar_gz_topic=${LIDAR_GZ_TOPIC}
 lidar_source=${LIDAR_SOURCE}
+require_real_lidar=${REQUIRE_REAL_LIDAR}
 livox_lidar_rate=${LIVOX_RATE}
 livox_imu_rate=${IMU_RATE}
 cloud_registered_rate=${CLOUD_RATE}
@@ -690,6 +699,7 @@ start_stack() {
   echo "Model: ${SUBMISSION_MODEL_NAME}"
   echo "LiDAR source: ${LIDAR_SOURCE}"
   echo "LiDAR topic: ${LIDAR_GZ_TOPIC} (${LIDAR_GZ_TYPE})"
+  echo "Require real lidar: ${REQUIRE_REAL_LIDAR}"
   echo "IMU topic: ${IMU_GZ_TOPIC} (${IMU_GZ_TYPE})"
   echo "Rates: /livox/lidar=${LIVOX_RATE} /livox/imu=${IMU_RATE}"
   echo "Mapper: /cloud_registered rate=${CLOUD_RATE} width=${CLOUD_WIDTH}"

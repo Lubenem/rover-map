@@ -66,6 +66,12 @@ status_line() {
 PASS_COUNT=0
 FAIL_COUNT=0
 
+if [ "${SUBMISSION_LIDAR_SOURCE:-unknown}" = "gazebo" ]; then
+  LIDAR_SOURCE_PASS="PASS"; PASS_COUNT=$((PASS_COUNT + 1))
+else
+  LIDAR_SOURCE_PASS="FAIL"; FAIL_COUNT=$((FAIL_COUNT + 1))
+fi
+
 LASER_RAW="$(probe_raw /laser/scan sensor_msgs/msg/LaserScan 45 3 none || true)"
 IMU_RAW="$(probe_raw /livox/imu sensor_msgs/msg/Imu 45 6 none || true)"
 POINTS_RAW_METRIC="$(probe_raw /points_raw sensor_msgs/msg/PointCloud2 45 2 pointcloud_width || true)"
@@ -139,6 +145,7 @@ printf "%s\n" "${CLOUD_RAW_WIDTH}" >"${EVIDENCE_DIR}/cloud_registered_width_prob
   echo "lidar_source=${SUBMISSION_LIDAR_SOURCE:-unknown}"
   echo
   echo "Topic Check Table"
+  status_line "lidar_source==gazebo" "${SUBMISSION_LIDAR_SOURCE:-unknown}" "${LIDAR_SOURCE_PASS}"
   status_line "/laser/scan rate>0" "${LASER_RATE}" "${LASER_PASS}"
   status_line "/livox/imu rate>0" "${IMU_RATE}" "${IMU_PASS}"
   status_line "/points_raw width>0" "${POINTS_WIDTH}" "${POINTS_PASS}"

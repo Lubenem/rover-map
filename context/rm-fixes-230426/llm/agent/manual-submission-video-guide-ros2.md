@@ -1,9 +1,9 @@
 # Manual Submission + Video Guide (ROS2)
 
-Date: 2026-04-23
+Date: 2026-04-25
 
 This guide is for manual recording/submission only.
-It uses the implemented ROS2 scripts and keeps commands deterministic.
+It uses strict real-LiDAR mode, so synthetic fallback is blocked.
 
 ## 1) Prep
 From host terminal:
@@ -44,10 +44,11 @@ tmux new-window -n logs
 ### Window `core`
 ```bash
 cd /home/liu99/projects/rover-map
-make submission-start-ros2
+make submission-start-ros2-real
 ```
 Wait until you see:
 - `ROS2 stack started (Phases D/E/G).`
+- `LiDAR source: gazebo`
 - mapper line with `/cloud_registered rate=... width=...`
 
 ### Window `status`
@@ -81,18 +82,19 @@ cd /home/liu99/projects/rover-map
 make submission-check-ros2
 ```
 
-Expected table should end with:
-- `PASS_COUNT=6`
+Expected table must include:
+- `lidar_source==gazebo PASS`
+- `PASS_COUNT=7`
 - `FAIL_COUNT=0`
 
 Evidence path format:
 - `artifacts/ros2/submission-check-<timestamp>/`
 
 ## 5) What to show in video
-1. `core` window startup output (PX4 + Gazebo Harmonic + mapper ready).
-2. `status` window showing `phase=G` and non-zero rates.
+1. `core` window startup output (PX4 + Gazebo Harmonic + mapper ready in strict mode).
+2. `status` window showing `phase=G`, `require_real_lidar=1`, `lidar_source=gazebo`, and non-zero rates.
 3. RViz colored map growth (`/cloud_registered`).
-4. `check` window PASS table and evidence directory.
+4. `check` window with 7/7 pass gates and evidence directory.
 5. Keep recording 30-60 more seconds for stability.
 
 ## 6) Finish and cleanup
@@ -100,9 +102,3 @@ Evidence path format:
 cd /home/liu99/projects/rover-map
 make submission-stop-ros2
 ```
-
-## 7) Important note for reviewer
-Current runtime may show:
-- `lidar_source=synthetic`
-This is tracked in:
-- `context/rm-fixes-230426/reports/open-issue-real-gazebo-lidar-fail-report.md`

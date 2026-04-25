@@ -1,7 +1,7 @@
 # rover-map
 Reproducible Docker workspace for rover mapping experiments with FAST-LIVO2.
 
-## Current Scope (2026-04-23)
+## Current Scope (2026-04-25)
 This repo now contains an active ROS2 pipeline for the fixes request:
 - `ROS2 Humble + Gazebo Harmonic + PX4`
 - FAST-LIVO2 ROS2 mapper publishing `/cloud_registered`
@@ -11,14 +11,15 @@ This repo now contains an active ROS2 pipeline for the fixes request:
 Legacy ROS1 tooling is still present for fallback/history, but the current work is centered on ROS2.
 
 ## Current Status
-Automated ROS2 checks pass with:
+Automated ROS2 checks pass with strict real-LiDAR mode:
 - `/laser/scan`, `/livox/imu`, `/points_raw`, `/livox/lidar`, `/cloud_registered`
 - reflectivity variance check (`> 0`)
+- `lidar_source==gazebo` gate
+- `PASS_COUNT=7`, `FAIL_COUNT=0`
 
-Important known issue:
-- real Gazebo rover lidar does not publish in this environment
-- runtime currently falls back to synthetic lidar (`lidar_source=synthetic`)
-- tracked in: `context/rm-fixes-230426/reports/open-issue-real-gazebo-lidar-fail-report.md`
+Latest evidence:
+- `artifacts/ros2/submission-check-20260425-142039/check-summary.txt`
+- `context/rm-fixes-230426/llm/agent/reports/advise1-followup-report-2026-04-25.md`
 
 ## Key Make Targets
 ROS2 stack:
@@ -27,6 +28,7 @@ ROS2 stack:
 - `make docker-shell-ros2`
 - `make test-env-ros2`
 - `make submission-start-ros2`
+- `make submission-start-ros2-real`
 - `make submission-status-ros2`
 - `make submission-check-ros2`
 - `make submission-stop-ros2`
@@ -44,7 +46,7 @@ cd ~/projects/rover-map
 make docker-build-ros2
 make docker-up-ros2
 make test-env-ros2
-make submission-start-ros2
+make submission-start-ros2-real
 make submission-check-ros2
 make submission-stop-ros2
 ```
@@ -64,6 +66,9 @@ Main scripts:
 - `tools/laser_scan_relay_ros2.py`
 - `tools/synthetic_lidar_ros2.py`
 - `tools/ros2_topic_probe.py`
+
+Strict run flag:
+- `tools/submission_run_ros2.sh start --require-real-lidar`
 
 ROS2 mapper/runtime config:
 - `config/fast_livo_ros2_rover.yaml`
@@ -92,8 +97,8 @@ Do not commit vendored dependency repos under `lib/`.
 
 ## Manual Submission / Recording Guide
 Use:
-- `manual-submission-video-guide-ros2.md`
+- `context/rm-fixes-230426/llm/agent/manual-submission-video-guide-ros2.md`
 
 Phase reports and evidence:
-- `context/rm-fixes-230426/reports/`
+- `context/rm-fixes-230426/llm/agent/reports/`
 - `artifacts/ros2/submission-check-<timestamp>/`
