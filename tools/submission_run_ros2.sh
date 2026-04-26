@@ -12,8 +12,11 @@ fi
 HEADLESS=1
 FOREGROUND=0
 TARGET_OVERRIDE=""
+WORLD_OVERRIDE=""
 WAIT_TIMEOUT=120
 REQUIRE_REAL_LIDAR=0
+DRIVE_DEMO=0
+DRIVE_DURATION=90
 
 while [ $# -gt 0 ]; do
   case "$1" in
@@ -34,6 +37,14 @@ while [ $# -gt 0 ]; do
         exit 1
       fi
       ;;
+    --world)
+      shift
+      WORLD_OVERRIDE="${1:-}"
+      if [ -z "${WORLD_OVERRIDE}" ]; then
+        echo "Missing value for --world" >&2
+        exit 1
+      fi
+      ;;
     --timeout)
       shift
       WAIT_TIMEOUT="${1:-}"
@@ -44,6 +55,17 @@ while [ $# -gt 0 ]; do
       ;;
     --require-real-lidar)
       REQUIRE_REAL_LIDAR=1
+      ;;
+    --drive-demo)
+      DRIVE_DEMO=1
+      ;;
+    --drive-duration)
+      shift
+      DRIVE_DURATION="${1:-}"
+      if ! [[ "${DRIVE_DURATION}" =~ ^[0-9]+([.][0-9]+)?$ ]]; then
+        echo "--drive-duration expects numeric seconds" >&2
+        exit 1
+      fi
       ;;
     *)
       echo "Unknown option: $1" >&2
@@ -76,11 +98,12 @@ SYNTH_LIDAR_LOG="${LOG_DIR}/synthetic_lidar_ros2.log"
 MAPPER_LOG="${LOG_DIR}/fast_livo_mapper.log"
 MAPPER_BUILD_LOG="${LOG_DIR}/fast_livo_build.log"
 TOPICS_LOG="${LOG_DIR}/gz_topics.log"
+DRIVE_LOG="${LOG_DIR}/submission_drive_ros2.log"
 MAPPER_CONFIG="/workspace/config/fast_livo_ros2_rover.yaml"
 CAMERA_CONFIG="/workspace/lib/FAST-LIVO2-ROS2/config/camera_pinhole.yaml"
 
 DEFAULT_TARGET="${PX4_SIM_MODEL:-gz_rover_differential}"
-DEFAULT_WORLD="${PX4_GZ_WORLD:-rover}"
+DEFAULT_WORLD="${WORLD_OVERRIDE:-${PX4_GZ_WORLD:-rover}}"
 
 SUBMISSION_WORLD_NAME=""
 SUBMISSION_MODEL_NAME=""
@@ -127,7 +150,8 @@ cleanup_stack_processes() {
   pkill -f "/workspace/tools/imu_relay_ros2.py" 2>/dev/null || true
   pkill -f "/workspace/tools/laser_scan_relay_ros2.py" 2>/dev/null || true
   pkill -f "/workspace/tools/synthetic_lidar_ros2.py" 2>/dev/null || true
-  pkill -f "fast_livo fastlivo_mapping" 2>/dev/null || true
+  pkill -f "/workspace/tools/submission_drive_ros2.py" 2>/dev/null || true
+  pkill -f "fastlivo_mapping" 2>/dev/null || true
 }
 
 ensure_px4_python_deps() {
@@ -572,6 +596,20 @@ verify_phase_e_topics() {
   }
 }
 
+start_drive_demo() {
+  if [ "${DRIVE_DEMO}" -ne 1 ]; then
+    return 0
+  fi
+  python3 /workspace/tools/submission_drive_ros2.py \
+    --world "${SUBMISSION_WORLD_NAME}" \
+    --model "${SUBMISSION_MODEL_NAME}" \
+    --duration "${DRIVE_DURATION}" \
+    --rate 6 \
+    >"${DRIVE_LOG}" 2>&1 &
+  local drive_pid=$!
+  echo "${drive_pid}" >>"${PID_FILE}"
+}
+
 write_env_file() {
   local target="$1"
   mkdir -p "${RUNTIME_DIR}" "${LOG_DIR}"
@@ -580,6 +618,7 @@ export ROS2_STACK_PHASE=G
 export ROS_DOMAIN_ID=${ROS_DOMAIN_ID:-42}
 export GZ_VERSION=harmonic
 export PX4_SIM_MODEL=${target}
+export PX4_GZ_WORLD=${DEFAULT_WORLD}
 export PX4_DIR=${PX4_DIR}
 export SUBMISSION_RUNTIME_DIR=${RUNTIME_DIR}
 export SUBMISSION_WORLD_NAME=${SUBMISSION_WORLD_NAME}
@@ -589,6 +628,8 @@ export SUBMISSION_GZ_LIDAR_TOPIC=${LIDAR_GZ_TOPIC}
 export SUBMISSION_LIDAR_SOURCE=${LIDAR_SOURCE}
 export SUBMISSION_MAPPER_CONFIG=${MAPPER_CONFIG}
 export SUBMISSION_REQUIRE_REAL_LIDAR=${REQUIRE_REAL_LIDAR}
+export SUBMISSION_DRIVE_DEMO=${DRIVE_DEMO}
+export SUBMISSION_DRIVE_DURATION=${DRIVE_DURATION}
 export SUBMISSION_GZ_SIM_RESOURCE_PATH=${GZ_SIM_RESOURCE_PATH:-}
 EOT
 }
@@ -604,12 +645,15 @@ headless=${HEADLESS}
 px4_pid=${px4_pid}
 runtime_dir=${RUNTIME_DIR}
 logs=${LOG_DIR}
+world_requested=${DEFAULT_WORLD}
 world=${SUBMISSION_WORLD_NAME}
 model=${SUBMISSION_MODEL_NAME}
 imu_gz_topic=${IMU_GZ_TOPIC}
 lidar_gz_topic=${LIDAR_GZ_TOPIC}
 lidar_source=${LIDAR_SOURCE}
 require_real_lidar=${REQUIRE_REAL_LIDAR}
+drive_demo=${DRIVE_DEMO}
+drive_duration=${DRIVE_DURATION}
 livox_lidar_rate=${LIVOX_RATE}
 livox_imu_rate=${IMU_RATE}
 cloud_registered_rate=${CLOUD_RATE}
@@ -653,11 +697,17 @@ start_stack() {
   : > "${MAPPER_LOG}"
   : > "${MAPPER_BUILD_LOG}"
   : > "${TOPICS_LOG}"
+  : > "${DRIVE_LOG}"
 
   (
     cd "${PX4_DIR}"
-    HEADLESS="${HEADLESS}" PX4_NO_PXH=1 PX4_GZ_WORLD="${DEFAULT_WORLD}" PX4_SIM_MODEL="${px4_target}" \
-      make px4_sitl "${px4_target}" >"${PX4_LOG}" 2>&1
+    if [ "${HEADLESS}" -eq 1 ]; then
+      HEADLESS=1 PX4_NO_PXH=1 PX4_GZ_WORLD="${DEFAULT_WORLD}" PX4_SIM_MODEL="${px4_target}" \
+        make px4_sitl "${px4_target}" >"${PX4_LOG}" 2>&1
+    else
+      PX4_NO_PXH=1 PX4_GZ_WORLD="${DEFAULT_WORLD}" PX4_SIM_MODEL="${px4_target}" \
+        make px4_sitl "${px4_target}" >"${PX4_LOG}" 2>&1
+    fi
   ) &
   local px4_pid=$!
   echo "${px4_pid}" >>"${PID_FILE}"
@@ -689,17 +739,21 @@ start_stack() {
     return 1
   fi
 
+  start_drive_demo
+
   sort -u -o "${PID_FILE}" "${PID_FILE}"
   write_env_file "${px4_target}"
   write_status_file "${px4_target}" "${px4_pid}"
 
   echo "ROS2 stack started (Phases D/E/G)."
   echo "PX4 target: ${px4_target}"
+  echo "Requested world: ${DEFAULT_WORLD}"
   echo "World: ${SUBMISSION_WORLD_NAME}"
   echo "Model: ${SUBMISSION_MODEL_NAME}"
   echo "LiDAR source: ${LIDAR_SOURCE}"
   echo "LiDAR topic: ${LIDAR_GZ_TOPIC} (${LIDAR_GZ_TYPE})"
   echo "Require real lidar: ${REQUIRE_REAL_LIDAR}"
+  echo "Drive demo: ${DRIVE_DEMO} (duration=${DRIVE_DURATION}s)"
   echo "IMU topic: ${IMU_GZ_TOPIC} (${IMU_GZ_TYPE})"
   echo "Rates: /livox/lidar=${LIVOX_RATE} /livox/imu=${IMU_RATE}"
   echo "Mapper: /cloud_registered rate=${CLOUD_RATE} width=${CLOUD_WIDTH}"
